@@ -1,5 +1,5 @@
 # This file lets Python treat the src folder as a package.
-# Other modules can import Member 1 handover functions from src.
+# Other modules can import Member 1, 2, and 3 handover functions from src.
 
 from src.data_loader import load_all_data
 from src.dependency_detector import (
@@ -15,7 +15,47 @@ from src.supply_chain_graph import (
     get_supply_chain_graph,
 )
 
+# Member 3 – Recovery Optimisation Engine
+from src.recovery_optimisation import (
+    optimise_recovery,
+    optimise_from_disruption_report,
+    classify_supplier,
+    check_material_compatibility,
+    assess_feasibility,
+    assess_cost_and_delivery,
+    assess_transport,
+    assess_upstream_dependency,
+    rank_candidates,
+    allocate_quantity,
+    DEFAULT_WEIGHTS,
+    # Status / label constants
+    CLASS_PRIMARY,
+    CLASS_BACKUP,
+    CLASS_SECONDARY,
+    CLASS_EMERGENCY,
+    FEASIBLE,
+    PARTIALLY_FEASIBLE,
+    INFEASIBLE,
+    FEASIBILITY_UNKNOWN,
+    TRANSPORT_AVAILABLE,
+    TRANSPORT_UNKNOWN,
+    TRANSPORT_UNAVAILABLE,
+    DEP_INDEPENDENT,
+    DEP_SHARED_UPSTREAM,
+    DEP_DIRECTLY_AFFECTED,
+    DEP_UNKNOWN,
+    STATUS_FEASIBLE,
+    STATUS_PARTIAL,
+    STATUS_NO_PLAN,
+    STATUS_EMERGENCY,
+    OBJ_BALANCED,
+    OBJ_LOWEST_COST,
+    OBJ_FASTEST,
+    UNKNOWN,
+)
+
 __all__ = [
+    # Member 1
     "load_all_data",
     "get_supply_chain_graph",
     "find_upstream_dependencies",
@@ -25,4 +65,40 @@ __all__ = [
     "find_direct_dependencies",
     "list_direct_dependencies",
     "find_multi_tier_dependencies",
+    # Member 3 – Recovery Optimisation
+    "optimise_recovery",
+    "optimise_from_disruption_report",
+    "classify_supplier",
+    "check_material_compatibility",
+    "assess_feasibility",
+    "assess_cost_and_delivery",
+    "assess_transport",
+    "assess_upstream_dependency",
+    "rank_candidates",
+    "allocate_quantity",
+    "DEFAULT_WEIGHTS",
+    "CLASS_PRIMARY",
+    "CLASS_BACKUP",
+    "CLASS_SECONDARY",
+    "CLASS_EMERGENCY",
+    "FEASIBLE",
+    "PARTIALLY_FEASIBLE",
+    "INFEASIBLE",
+    "FEASIBILITY_UNKNOWN",
+    "TRANSPORT_AVAILABLE",
+    "TRANSPORT_UNKNOWN",
+    "TRANSPORT_UNAVAILABLE",
+    "DEP_INDEPENDENT",
+    "DEP_SHARED_UPSTREAM",
+    "DEP_DIRECTLY_AFFECTED",
+    "DEP_UNKNOWN",
+    "STATUS_FEASIBLE",
+    "STATUS_PARTIAL",
+    "STATUS_NO_PLAN",
+    "STATUS_EMERGENCY",
+    "OBJ_BALANCED",
+    "OBJ_LOWEST_COST",
+    "OBJ_FASTEST",
+    "UNKNOWN",
 ]
+
