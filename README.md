@@ -1,206 +1,157 @@
-# AUTOPILOT 2.0 - Member 1
+# AUTOPILOT 2.0 – Resilient Supply Chain Management
 
-Data Management and Supply Chain Digital Twin.
+**An intelligent supply chain resilience and disruption management system.**
 
-This module loads the project datasets, builds a NetworkX digital twin of the supplier network, and exposes dependency lookup functions for the rest of the team.
+## 1. Project Overview
 
-## Scope
+AUTOPILOT 2.0 is a supply chain resilience prototype designed to identify supplier risks, analyse the impact of disruptions, simulate cascading failures, and support faster recovery decisions.
 
-Member 1 owns:
+Modern supply chains involve multiple suppliers, factories, warehouses, transportation routes, and customer orders. A disruption at one supplier can affect several connected entities, resulting in material shortages, production challenges, and potential delivery delays.
 
-1. Dataset creation and management
-2. Supplier network construction
-3. Supplier dependency graph
-4. Shared upstream supplier identification
-5. Making the data and graph available to other team members
+AUTOPILOT 2.0 aims to provide a digital representation of the supply chain and analyse these dependencies to help organisations understand potential disruptions and make informed recovery decisions.
 
-Member 1 does **not** own risk analysis, impact analysis, recovery optimisation, cascading failure, frontend, or SAP integration.
+## 2. Problem Statement
 
-SAP access is not confirmed yet, so the data source is **synthetic CSV files** in `data/`. `src/data_loader.py` can later add a SAP loader without changing how other modules call `load_all_data()`.
+Traditional supply chain management systems may not provide sufficient visibility into multi-tier supplier dependencies and the cascading effects of disruptions.
 
-## Setup (beginner)
+When a supplier experiences a disruption, organisations need to identify:
+- Which materials and suppliers are affected?
+- Which factories and warehouses may experience shortages?
+- Which customer orders are exposed?
+- Are alternative suppliers available?
+- What recovery strategies can minimise disruption?
 
-1. Open a terminal.
-2. Go to this project folder:
+AUTOPILOT 2.0 addresses these challenges through supply chain modelling, risk analysis, disruption simulation, and recovery planning.
 
-```bash
-cd C:\Users\bhovi\OneDrive\Desktop\AUTOPILOT_2.0
+## 3. Project Objectives
+
+- Build a digital twin of the multi-tier supply chain.
+- Identify critical and high-risk suppliers.
+- Analyse the impact of single and multiple supplier disruptions.
+- Identify affected materials, factories, warehouses, routes, and customer orders.
+- Evaluate backup supplier availability and capacity.
+- Simulate cascading failures across the supply chain.
+- Recommend suitable recovery strategies.
+- Provide an integrated interface for monitoring and analysing supply chain disruptions.
+- Explore future SAP integration.
+
+## 4. Solution Architecture
+
+The proposed system follows this workflow:
+
+```text
+       Supply Chain Dataset
+                |
+                v
+       Data Management
+                |
+                v
+       Supply Chain Digital Twin
+                |
+                v
+       Supplier Risk Analysis
+                |
+                v
+       Disruption Impact Analysis
+                |
+                v
+       Cascading Failure Simulation
+                |
+                v
+       Recovery Optimisation
+                |
+                v
+       Frontend Dashboard
+                |
+                v
+       Supply Chain Resilience Insights
 ```
 
-3. Install the Python packages:
+## 5. Team Responsibilities
 
-```bash
-py -3 -m pip install -r requirements.txt
-```
+The project is divided among five members.
 
-You only need `pandas` and `networkx`.
+### Member 1 – Data Management & Supply Chain Digital Twin
 
-## Architecture
+**Responsibility:** Build the data foundation.
 
-```
-CSV files in data/
-        |
-        v
-src/data_loader.py          load_all_data() -> dict of DataFrames
-        |
-        v
-src/supply_chain_graph.py   NetworkX DiGraph digital twin
-        |
-        +-- find_upstream_dependencies()
-        +-- find_suppliers_sharing_upstream()
-        |
-        v
-src/dependency_detector.py  lists direct and multi-hop supplier links
-        |
-        v
-Other team members import from src
-```
+- Prepare supplier, material, factory, warehouse, and customer-order datasets.
+- Create the common data structure.
+- Connect Tier-1, Tier-2, and Tier-3 suppliers.
+- Build the supply chain dependency network using NetworkX.
+- Identify shared upstream supplier dependencies.
+- Provide datasets and graph functions to other modules.
 
-Goods-flow direction in the graph: **upstream supplier -> downstream supplier**.
+### Member 2 – Supplier Risk & Disruption Impact Analysis
 
-## Folder structure
+**Responsibility:** Identify supplier risks and analyse disruption impacts.
 
-```
-data/                      Synthetic CSV files
-src/
-    __init__.py            Package exports for other modules
-    data_loader.py         Loads CSV now; SAP API later
-    supply_chain_graph.py  Builds the digital twin graph
-    dependency_detector.py Lists supplier-to-supplier links
-tests/
-    test_member1.py        Automated Member 1 tests
-main.py                    Program entry point
-validate_data.py           Dataset integrity checks
-HANDOVER_MEMBER1.md        Instructions for Member 2
-requirements.txt           Python packages to install
-README.md                  This file
-```
+- Identify critical and high-risk suppliers.
+- Calculate supplier risk scores and categories.
+- Accept single and multiple supplier disruption inputs.
+- Identify failed suppliers and affected materials.
+- Find downstream suppliers and potential cascading exposure.
+- Analyse available inventory and backup supplier capacity.
+- Identify affected factories, warehouses, transportation routes, and customer orders.
+- Estimate potential financial exposure.
+- Generate explainable disruption impact reports.
 
-## Datasets
+**Implemented:** Supplier risk scoring, single-supplier disruption analysis, and multi-supplier disruption simulation with overlap analysis.
 
-Fictional OEM: **Aarohan Electronics** (India).
+**Current data limitations:** Production days remaining and delivery delays are marked NOT COMPUTED because the required consumption, production, and shipment schedule data is unavailable.
 
-| File | Rows | Purpose |
-|---|---|---|
-| `data/suppliers.csv` | 35 | Suppliers in 3 tiers (10 / 13 / 12) |
-| `data/materials.csv` | 18 | Materials used in production |
-| `data/factories.csv` | 3 | Factories |
-| `data/warehouses.csv` | 4 | Warehouses |
-| `data/transport_routes.csv` | 6 | Transport routes |
-| `data/customer_orders.csv` | 25 | Customer orders |
-| `data/inventory.csv` | 36 | Stock at factories and warehouses |
-| `data/supplier_dependencies.csv` | 31 | Supplier-to-supplier links |
-| `data/supplier_materials.csv` | 28 | Which supplier provides which material |
+### Member 3 – Backup Supplier Intelligence & Recovery Optimisation
 
-Blank `shared_supplier_ids` on 5 routes is expected. That column is optional.
+**Responsibility:** Identify alternative suppliers and optimise recovery decisions.
 
-## Functions other members can import
+- Analyse alternative and backup suppliers.
+- Evaluate supplier availability and capacity.
+- Identify suitable replacement suppliers.
+- Develop recovery strategies.
+- Compare recovery options based on cost, delivery delays, shortages, and fulfilment.
+- Support recovery optimisation.
 
-```python
-from src import (
-    load_all_data,
-    get_supply_chain_graph,
-    find_upstream_dependencies,
-    find_suppliers_sharing_upstream,
-    SupplyChainGraph,
-    detect_dependencies,
-    list_direct_dependencies,
-    find_multi_tier_dependencies,
-)
+### Member 4 – Cascading Failure Simulation & Recovery Plan Challenger
 
-data = load_all_data()                 # dict of pandas DataFrames
-graph = get_supply_chain_graph(data)   # networkx.DiGraph
+**Responsibility:** Analyse supply chain-wide disruption propagation.
 
-# Upstream chain for one supplier (Tier 3 then Tier 2, by tier)
-find_upstream_dependencies(graph, "SUP-T1-03")
+- Simulate cascading failures across multiple supply chain levels.
+- Identify interconnected supplier dependencies.
+- Analyse the propagation of disruptions.
+- Evaluate the impact of combined failures.
+- Challenge and assess proposed recovery plans.
+- Identify vulnerabilities in recovery strategies.
 
-# Who shares one upstream parent
-find_suppliers_sharing_upstream(graph, "SUP-T2-03")
-# -> {'SUP-T2-03': ['SUP-T1-01', 'SUP-T1-02']}
+### Member 5 – Frontend, Integration & SAP Preparation
 
-# All shared upstream parents
-find_suppliers_sharing_upstream(graph)
-```
+**Responsibility:** Integrate the modules and provide the user interface.
 
-`load_all_data()` keys:
+- Develop the frontend dashboard.
+- Integrate the outputs from all team members.
+- Display supplier risks and disruption alerts.
+- Visualise the supply chain network.
+- Present disruption impact and recovery results.
+- Prepare the system for potential SAP integration.
 
-`suppliers`, `materials`, `factories`, `warehouses`, `transport_routes`, `customer_orders`, `inventory`, `supplier_dependencies`, `supplier_materials`
+## 6. Technology Stack
 
-You can also import from the original files:
+| Technology | Purpose |
+|---|---|
+| Python | Core development |
+| Pandas | Dataset handling and analysis |
+| NetworkX | Supply chain dependency graph |
+| CSV | Initial dataset storage |
+| Git & GitHub | Version control and collaboration |
+| Frontend technologies | Dashboard development and integration |
 
-```python
-from src.data_loader import load_all_data
-from src.supply_chain_graph import get_supply_chain_graph
-```
+Additional technologies may be incorporated as the project modules evolve.
 
-Pass `verbose=False` if you do not want load messages: `load_all_data(verbose=False)`.
+## 7. Project Structure
 
-## Execution commands
-
-Run these from the `AUTOPILOT_2.0` folder so `from src...` imports work.
-
-```bash
-py -3 -m pip install -r requirements.txt
-py -3 validate_data.py
-py -3 main.py
-py -3 -m unittest discover -s tests -v
-```
-
-## Actual test results (1 Nov 2026)
-
-### `py -3 -m unittest discover -s tests -v`
-
-```
-test_csv_files_exist ... ok
-test_dependency_edges_match_dataset ... ok
-test_every_dataset_id_is_a_graph_node ... ok
-test_foreign_keys_are_valid ... ok
-test_graph_node_and_edge_counts ... ok
-test_handover_api_and_class_wrapper ... ok
-test_no_duplicate_ids ... ok
-test_required_ids_have_no_missing_values ... ok
-test_shared_upstream_with_real_data ... ok
-test_tables_load_with_expected_counts ... ok
-
-Ran 10 tests in 0.140s
-OK
-```
-
-### `py -3 validate_data.py`
-
-- All 9 CSV files loaded
-- Counts match the table above
-- Invalid dependency IDs: none
-- Self-references: none
-- Unmapped materials: none
-- Duplicate IDs: none
-- Warnings: NONE
-- Errors: NONE
-- Exit code: 0
-
-### `py -3 main.py`
-
-- Digital twin nodes: **91**
-- Digital twin edges: **528**
-- Node types: 35 suppliers, 18 materials, 3 factories, 4 warehouses, 6 routes, 25 customer orders
-- Shared upstream example: `SUP-T2-03` (Nilgiri Cover Glass) -> `SUP-T1-01`, `SUP-T1-02`
-- Upstream of `SUP-T1-03` (DeccanCell Packs): `SUP-T2-01` plus `SUP-T3-01` ... `SUP-T3-04`
-- Direct supplier-to-supplier rows: 31
-- Suppliers with an upstream chain: 22
-- Isolated graph nodes: 0
-
-## Handover notes for other members
-
-Full API, columns, and copy-paste examples for Member 2 are in **`HANDOVER_MEMBER1.md`**.
-
-- Start with `load_all_data()` and `get_supply_chain_graph(data)`. Do not read CSV files yourself.
-- Shared-upstream demo ID: **SUP-T2-03**. Backup pack maker pair: **SUP-T1-03** and **SUP-T1-04** share **SUP-T2-01**.
-- `detect_dependencies()["multi_tier_risks"]` is always empty. Risk scoring is not implemented here.
-- Graph type is `networkx.DiGraph`. Repeat edges between the same two nodes overwrite; counts above are the live totals.
-
-## Out of scope (do not expect these from Member 1)
-
-- Live SAP loading
-- Risk / impact / recovery / cascading-failure models
-- Frontend
-- Retraining any ML models
+```text
+AUTOPILOT_2.0/
+│
+├── data/
+│   ├── suppliers.csv
+│   ├── materials.csv
+│   ├── factories
