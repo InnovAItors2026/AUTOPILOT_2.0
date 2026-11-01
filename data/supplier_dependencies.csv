@@ -1,0 +1,32 @@
+dependency_id,downstream_supplier_id,upstream_supplier_id,material_id,dependency_type,notes
+DEP-01,SUP-T2-01,SUP-T3-01,MAT-01,direct,CellTech needs lithium salts from Sabarmati Lithium
+DEP-02,SUP-T2-01,SUP-T3-02,MAT-01,direct,CellTech needs graphite from Damodar Graphite
+DEP-03,SUP-T2-01,SUP-T3-03,MAT-01,direct,CellTech needs electrolyte from Vishwamitri
+DEP-04,SUP-T2-01,SUP-T3-04,MAT-01,direct,CellTech needs copper foil from Subarnarekha
+DEP-05,SUP-T1-03,SUP-T2-01,MAT-01,direct,DeccanCell packs cells from CellTech Hyderabad
+DEP-06,SUP-T1-04,SUP-T2-01,MAT-01,direct,WesternCell is the backup pack maker and shares CellTech
+DEP-07,SUP-T2-03,SUP-T3-09,MAT-04,direct,Nilgiri Cover Glass needs silica from Aravalli
+DEP-08,SUP-T1-01,SUP-T2-03,MAT-04,direct,BharatVista uses Nilgiri cover glass
+DEP-09,SUP-T1-02,SUP-T2-03,MAT-04,direct,Coromandel Screens is the backup display maker and shares Nilgiri glass
+DEP-10,SUP-T2-02,SUP-T3-10,MAT-08,direct,Marina PCB uses Hooghly solder
+DEP-11,SUP-T2-02,SUP-T3-04,MAT-08,direct,Marina PCB uses Subarnarekha copper foil
+DEP-12,SUP-T2-04,SUP-T3-05,MAT-05,direct,Silicon Assembly packages Mutha wafers into SoCs
+DEP-13,SUP-T2-05,SUP-T3-05,MAT-06,direct,NCR Memory also depends on Mutha wafers
+DEP-14,SUP-T2-06,SUP-T3-04,MAT-10,direct,USB-C connectors use Subarnarekha copper
+DEP-15,SUP-T1-05,SUP-T2-02,MAT-08,direct,Coromandel Circuits mounts parts on Marina bare PCBs
+DEP-16,SUP-T1-05,SUP-T2-04,MAT-05,direct,Main boards need packaged SoCs
+DEP-17,SUP-T1-05,SUP-T2-05,MAT-06,direct,Main boards need memory modules
+DEP-18,SUP-T1-05,SUP-T2-06,MAT-10,direct,Main boards need USB-C connectors
+DEP-19,SUP-T2-07,SUP-T3-07,MAT-11,direct,Pimpri Polymers uses Adyar resins
+DEP-20,SUP-T2-08,SUP-T3-08,MAT-12,direct,Coromandel Extrude uses Kalinga alumina
+DEP-21,SUP-T1-06,SUP-T2-07,MAT-11,direct,Sahyadri Housings uses Pimpri plastic parts
+DEP-22,SUP-T1-06,SUP-T2-08,MAT-12,direct,Sahyadri Housings uses Chennai aluminum frames
+DEP-23,SUP-T1-07,SUP-T2-09,MAT-18,direct,Charminar Optics builds modules from Deccan sensors
+DEP-24,SUP-T2-10,SUP-T3-06,MAT-13,direct,Kovai Magnetics needs Noyyal rare earth magnets
+DEP-25,SUP-T1-08,SUP-T2-10,MAT-13,direct,Kovai Audio uses Kovai Magnetics drivers
+DEP-26,SUP-T1-09,SUP-T3-11,MAT-17,direct,Godavari Pack uses Godavari Pulp
+DEP-27,SUP-T2-12,SUP-T3-04,MAT-15,direct,Noida Flex Circuits uses copper foil
+DEP-28,SUP-T1-10,SUP-T2-12,MAT-15,direct,Yamuna Flex finishes cables from Noida Flex Circuits
+DEP-29,SUP-T2-13,SUP-T3-12,MAT-16,direct,Sutlej Fasteners draws Satluj steel wire
+DEP-30,SUP-T1-06,SUP-T2-13,MAT-16,direct,Housing kits include Sutlej screws
+DEP-31,SUP-T2-11,SUP-T3-07,MAT-14,direct,Maval Thermal uses polymer from Adyar Resins

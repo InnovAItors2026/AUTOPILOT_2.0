@@ -1,0 +1,7 @@
+route_id,origin_id,origin_name,origin_type,destination_id,destination_name,destination_type,mode,distance_km,transit_days,cost_per_shipment_inr,cargo,shared_supplier_ids
+RTE-01,FAC-02,Aarohan SMT Chennai,factory,FAC-01,Aarohan Assembly Bengaluru,factory,road,350,2,18500,Assembled main PCB (MAT-09),
+RTE-02,SUP-T1-02,Coromandel Screens Chennai,supplier,FAC-01,Aarohan Assembly Bengaluru,factory,road,346,2,16200,Displays and assembled PCBs,SUP-T1-02;SUP-T1-05
+RTE-03,FAC-03,Aarohan Energy Pune,factory,FAC-01,Aarohan Assembly Bengaluru,factory,road,840,3,24800,Battery packs (MAT-02),
+RTE-04,FAC-01,Aarohan Assembly Bengaluru,factory,WH-04,North Hub Gurugram,warehouse,rail,2150,5,42000,Finished goods to north India,
+RTE-05,FAC-01,Aarohan Assembly Bengaluru,factory,WH-01,South Hub Bengaluru,warehouse,road,28,1,4500,Finished goods to south DC,
+RTE-06,FAC-02,Aarohan SMT Chennai,factory,WH-02,Port Hub Chennai,warehouse,road,22,1,3800,Boards and export staging,

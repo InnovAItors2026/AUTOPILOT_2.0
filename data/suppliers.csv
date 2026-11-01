@@ -1,0 +1,36 @@
+supplier_id,supplier_name,tier,city,state,country,category,monthly_capacity_units,capacity_status,lead_time_days,quality_score,primary_route_id
+SUP-T1-01,BharatVista Displays,1,Hosur,Tamil Nadu,India,OLED display modules,18000,sufficient,7,96,RTE-05
+SUP-T1-02,Coromandel Screens,1,Chennai,Tamil Nadu,India,OLED display modules,6000,sufficient,10,93,RTE-02
+SUP-T1-03,DeccanCell Packs,1,Hyderabad,Telangana,India,Battery packs,9000,sufficient,8,95,RTE-03
+SUP-T1-04,WesternCell Packs,1,Pune,Maharashtra,India,Battery packs,5000,sufficient,9,94,RTE-03
+SUP-T1-05,Coromandel Circuits,1,Chennai,Tamil Nadu,India,Assembled main PCB,12000,sufficient,6,97,RTE-02
+SUP-T1-06,Sahyadri Housings,1,Pune,Maharashtra,India,Phone housings and frames,15000,sufficient,8,94,RTE-03
+SUP-T1-07,Charminar Optics,1,Hyderabad,Telangana,India,Camera modules,10000,sufficient,12,95,RTE-03
+SUP-T1-08,Kovai Audio,1,Coimbatore,Tamil Nadu,India,Speaker and microphone sets,20000,sufficient,7,96,RTE-02
+SUP-T1-09,Godavari Pack,1,Nashik,Maharashtra,India,Retail packaging,40000,sufficient,5,98,RTE-03
+SUP-T1-10,Yamuna Flex,1,Noida,Uttar Pradesh,India,Flex cable sets,25000,sufficient,6,95,RTE-04
+SUP-T2-01,CellTech Hyderabad,2,Hyderabad,Telangana,India,Lithium-ion cells,4000,insufficient,14,91,RTE-03
+SUP-T2-02,Marina PCB Fab,2,Chennai,Tamil Nadu,India,Bare multilayer PCB,20000,sufficient,10,94,RTE-01
+SUP-T2-03,Nilgiri Cover Glass,2,Hosur,Tamil Nadu,India,Cover glass,22000,sufficient,12,96,RTE-05
+SUP-T2-04,Silicon Assembly Bengaluru,2,Bengaluru,Karnataka,India,Application processor packaging,15000,sufficient,21,97,RTE-05
+SUP-T2-05,NCR Memory,2,Noida,Uttar Pradesh,India,LPDDR and UFS memory,18000,sufficient,18,95,RTE-04
+SUP-T2-06,Maruti Connect,2,Manesar,Haryana,India,USB-C connectors,30000,sufficient,8,93,RTE-04
+SUP-T2-07,Pimpri Polymers,2,Pune,Maharashtra,India,Plastic housing parts,18000,sufficient,9,94,RTE-03
+SUP-T2-08,Coromandel Extrude,2,Chennai,Tamil Nadu,India,Aluminum mid-frames,12000,sufficient,11,95,RTE-01
+SUP-T2-09,Deccan Image Sensors,2,Hyderabad,Telangana,India,Camera image sensors,8000,sufficient,20,96,RTE-03
+SUP-T2-10,Kovai Magnetics,2,Coimbatore,Tamil Nadu,India,Acoustic drivers,25000,sufficient,10,94,RTE-02
+SUP-T2-11,Maval Thermal,2,Pune,Maharashtra,India,Thermal pads,35000,sufficient,7,93,RTE-03
+SUP-T2-12,Noida Flex Circuits,2,Noida,Uttar Pradesh,India,Flexible printed circuits,20000,sufficient,9,95,RTE-04
+SUP-T2-13,Sutlej Fasteners,2,Ludhiana,Punjab,India,Precision screws,80000,sufficient,5,92,RTE-04
+SUP-T3-01,Sabarmati Lithium,3,Ahmedabad,Gujarat,India,Lithium salts,50000,sufficient,15,90,RTE-03
+SUP-T3-02,Damodar Graphite,3,Dhanbad,Jharkhand,India,Battery-grade graphite,40000,sufficient,18,89,RTE-04
+SUP-T3-03,Vishwamitri Electrolyte,3,Vadodara,Gujarat,India,Cell electrolyte,30000,sufficient,16,91,RTE-03
+SUP-T3-04,Subarnarekha Foil,3,Jamshedpur,Jharkhand,India,Copper foil,25000,sufficient,14,92,RTE-04
+SUP-T3-05,Mutha Wafer,3,Pune,Maharashtra,India,Silicon wafers,10000,sufficient,30,97,RTE-03
+SUP-T3-06,Noyyal Rare Earth,3,Coimbatore,Tamil Nadu,India,Speaker magnets,15000,sufficient,20,90,RTE-02
+SUP-T3-07,Adyar Resins,3,Chennai,Tamil Nadu,India,Polymer resin,40000,sufficient,8,91,RTE-01
+SUP-T3-08,Kalinga Alumina,3,Jharsuguda,Odisha,India,Aluminum feedstock,35000,sufficient,12,90,RTE-01
+SUP-T3-09,Aravalli Silica,3,Bhiwadi,Rajasthan,India,Display glass silica,50000,sufficient,10,89,RTE-04
+SUP-T3-10,Hooghly Solder,3,Howrah,West Bengal,India,Solder wire,20000,sufficient,9,93,RTE-04
+SUP-T3-11,Godavari Pulp,3,Nashik,Maharashtra,India,Packaging pulp,60000,sufficient,7,92,RTE-03
+SUP-T3-12,Satluj Steel Wire,3,Ludhiana,Punjab,India,Steel wire,70000,sufficient,6,91,RTE-04

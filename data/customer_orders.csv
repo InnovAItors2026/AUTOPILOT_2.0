@@ -1,0 +1,26 @@
+order_id,customer_name,city,state,warehouse_id,product_name,quantity,unit_price_inr,order_value_inr,order_date,required_date,status
+ORD-01,PixelMart Retail,Bengaluru,Karnataka,WH-01,Nova X Smartphone,420,18990,7975800,2026-10-06,2026-11-04,confirmed
+ORD-02,GadgetHaat Stores,Mysuru,Karnataka,WH-01,Nova X Smartphone,180,18990,3418200,2026-10-08,2026-11-06,confirmed
+ORD-03,Southern Spectrum,Kochi,Kerala,WH-01,Slate 10 Tablet,95,24990,2374050,2026-10-09,2026-11-10,confirmed
+ORD-04,Malabar Electros,Kozhikode,Kerala,WH-01,Pulse Buds,260,3490,907400,2026-10-10,2026-11-05,confirmed
+ORD-05,Cauvery Digital,Coimbatore,Tamil Nadu,WH-02,Nova X Smartphone,310,18990,5886900,2026-10-07,2026-11-08,confirmed
+ORD-06,Marina Mobiles,Chennai,Tamil Nadu,WH-02,Slate 10 Tablet,140,24990,3498600,2026-10-11,2026-11-12,confirmed
+ORD-07,Madurai Gadget Hub,Madurai,Tamil Nadu,WH-02,Pulse Buds,220,3490,767800,2026-10-12,2026-11-07,confirmed
+ORD-08,Port City Exports,Chennai,Tamil Nadu,WH-02,Nova X Smartphone,500,17600,8800000,2026-10-05,2026-11-20,planned
+ORD-09,Sahyadri Retail,Pune,Maharashtra,WH-03,Nova X Smartphone,360,18990,6836400,2026-10-08,2026-11-09,confirmed
+ORD-10,Deccan Digital,Mumbai,Maharashtra,WH-03,Slate 10 Tablet,175,24990,4373250,2026-10-13,2026-11-14,confirmed
+ORD-11,Konkan Electros,Navi Mumbai,Maharashtra,WH-03,Pulse Buds,300,3490,1047000,2026-10-14,2026-11-08,confirmed
+ORD-12,Nashik Superstore,Nashik,Maharashtra,WH-03,Nova X Smartphone,150,18990,2848500,2026-10-15,2026-11-16,confirmed
+ORD-13,Capital Gadget Co,New Delhi,Delhi,WH-04,Nova X Smartphone,480,18990,9115200,2026-10-06,2026-11-11,confirmed
+ORD-14,NCR SuperDigital,Gurugram,Haryana,WH-04,Slate 10 Tablet,210,24990,5247900,2026-10-09,2026-11-15,confirmed
+ORD-15,Yamuna Electronics,Noida,Uttar Pradesh,WH-04,Pulse Buds,340,3490,1186600,2026-10-10,2026-11-09,confirmed
+ORD-16,Pink City Mobiles,Jaipur,Rajasthan,WH-04,Nova X Smartphone,190,18990,3608100,2026-10-16,2026-11-18,confirmed
+ORD-17,Satluj Retail,Chandigarh,Chandigarh,WH-04,Slate 10 Tablet,80,24990,1999200,2026-10-17,2026-11-19,confirmed
+ORD-18,Lucknow Gadget Mart,Lucknow,Uttar Pradesh,WH-04,Nova X Smartphone,230,18990,4367700,2026-10-18,2026-11-20,planned
+ORD-19,Eastern Circuit,Kolkata,West Bengal,WH-04,Nova X Smartphone,200,18990,3798000,2026-10-12,2026-11-17,confirmed
+ORD-20,Hooghly Home Tech,Howrah,West Bengal,WH-04,Pulse Buds,180,3490,628200,2026-10-19,2026-11-12,confirmed
+ORD-21,Sabarmati Digital,Ahmedabad,Gujarat,WH-03,Nova X Smartphone,270,18990,5127300,2026-10-11,2026-11-13,confirmed
+ORD-22,Kutch Electros,Surat,Gujarat,WH-03,Slate 10 Tablet,110,24990,2748900,2026-10-20,2026-11-21,planned
+ORD-23,Indore SuperGadgets,Indore,Madhya Pradesh,WH-03,Pulse Buds,150,3490,523500,2026-10-21,2026-11-14,confirmed
+ORD-24,Hyderabad Pixel Point,Hyderabad,Telangana,WH-01,Nova X Smartphone,340,18990,6456600,2026-10-08,2026-11-10,confirmed
+ORD-25,Charminar Trade House,Hyderabad,Telangana,WH-01,Slate 10 Tablet,125,24990,3123750,2026-10-22,2026-11-22,planned
