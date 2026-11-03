@@ -1,0 +1,1322 @@
+[
+  {
+    "approval_id": "REJ-1793742649",
+    "timestamp": "2026-11-03T21:50:49.063974+00:00",
+    "status": "REJECTED",
+    "material_id": "MAT-02",
+    "allocated_quantity": 1000.0,
+    "total_cost_inr": 645000.0,
+    "selected_suppliers": [
+      {
+        "supplier_id": "SUP-T1-04",
+        "supplier_name": "WesternCell Packs",
+        "allocated_quantity": 1000,
+        "unit_cost_inr": 645
+      }
+    ],
+    "approver_name": "Dr. Shreya",
+    "approver_role": "Chief Supply Chain Officer",
+    "justification": "Excessive cost premium and shared upstream dependency risk.",
+    "notes": "Testing rejection audit trail persistence"
+  },
+  {
+    "approval_id": "APV-1793742648",
+    "timestamp": "2026-11-03T21:50:48.802475+00:00",
+    "status": "APPROVED",
+    "material_id": "MAT-02",
+    "allocated_quantity": 1000.0,
+    "total_cost_inr": 645000.0,
+    "selected_suppliers": [
+      {
+        "supplier_id": "SUP-T1-04",
+        "supplier_name": "WesternCell Packs",
+        "allocated_quantity": 1000,
+        "unit_cost_inr": 645
+      }
+    ],
+    "approver_name": "Dr. Shreya",
+    "approver_role": "Chief Supply Chain Officer",
+    "justification": "Emergency re-routing authorized for Hackfest 2026 scenario.",
+    "notes": "Testing audit trail persistence"
+  },
+  {
+    "approval_id": "REJ-1793742301",
+    "timestamp": "2026-11-03T21:45:01.754169+00:00",
+    "status": "REJECTED",
+    "material_id": "MAT-02",
+    "allocated_quantity": 1000.0,
+    "total_cost_inr": 645000.0,
+    "selected_suppliers": [
+      {
+        "supplier_id": "SUP-T1-04",
+        "supplier_name": "WesternCell Packs",
+        "allocated_quantity": 1000,
+        "unit_cost_inr": 645
+      }
+    ],
+    "approver_name": "Dr. Shreya",
+    "approver_role": "Chief Supply Chain Officer",
+    "justification": "Excessive cost premium and shared upstream dependency risk.",
+    "notes": "Testing rejection audit trail persistence"
+  },
+  {
+    "approval_id": "APV-1793742301",
+    "timestamp": "2026-11-03T21:45:01.487196+00:00",
+    "status": "APPROVED",
+    "material_id": "MAT-02",
+    "allocated_quantity": 1000.0,
+    "total_cost_inr": 645000.0,
+    "selected_suppliers": [
+      {
+        "supplier_id": "SUP-T1-04",
+        "supplier_name": "WesternCell Packs",
+        "allocated_quantity": 1000,
+        "unit_cost_inr": 645
+      }
+    ],
+    "approver_name": "Dr. Shreya",
+    "approver_role": "Chief Supply Chain Officer",
+    "justification": "Emergency re-routing authorized for Hackfest 2026 scenario.",
+    "notes": "Testing audit trail persistence"
+  },
+  {
+    "approval_id": "REJ-1793741642",
+    "timestamp": "2026-11-03T21:34:02.001038+00:00",
+    "status": "REJECTED",
+    "material_id": "MAT-02",
+    "allocated_quantity": 1000.0,
+    "total_cost_inr": 645000.0,
+    "selected_suppliers": [
+      {
+        "supplier_id": "SUP-T1-04",
+        "supplier_name": "WesternCell Packs",
+        "allocated_quantity": 1000,
+        "unit_cost_inr": 645
+      }
+    ],
+    "approver_name": "Dr. Shreya",
+    "approver_role": "Chief Supply Chain Officer",
+    "justification": "Excessive cost premium and shared upstream dependency risk.",
+    "notes": "Testing rejection audit trail persistence"
+  },
+  {
+    "approval_id": "APV-1793741641",
+    "timestamp": "2026-11-03T21:34:01.730251+00:00",
+    "status": "APPROVED",
+    "material_id": "MAT-02",
+    "allocated_quantity": 1000.0,
+    "total_cost_inr": 645000.0,
+    "selected_suppliers": [
+      {
+        "supplier_id": "SUP-T1-04",
+        "supplier_name": "WesternCell Packs",
+        "allocated_quantity": 1000,
+        "unit_cost_inr": 645
+      }
+    ],
+    "approver_name": "Dr. Shreya",
+    "approver_role": "Chief Supply Chain Officer",
+    "justification": "Emergency re-routing authorized for Hackfest 2026 scenario.",
+    "notes": "Testing audit trail persistence"
+  },
+  {
+    "approval_id": "REJ-1793741360",
+    "timestamp": "2026-11-03T21:29:20.793223+00:00",
+    "status": "REJECTED",
+    "material_id": "MAT-02",
+    "allocated_quantity": 1000.0,
+    "total_cost_inr": 645000.0,
+    "selected_suppliers": [
+      {
+        "supplier_id": "SUP-T1-04",
+        "supplier_name": "WesternCell Packs",
+        "allocated_quantity": 1000,
+        "unit_cost_inr": 645
+      }
+    ],
+    "approver_name": "Dr. Shreya",
+    "approver_role": "Chief Supply Chain Officer",
+    "justification": "Excessive cost premium and shared upstream dependency risk.",
+    "notes": "Testing rejection audit trail persistence"
+  },
+  {
+    "approval_id": "APV-1793741360",
+    "timestamp": "2026-11-03T21:29:20.521199+00:00",
+    "status": "APPROVED",
+    "material_id": "MAT-02",
+    "allocated_quantity": 1000.0,
+    "total_cost_inr": 645000.0,
+    "selected_suppliers": [
+      {
+        "supplier_id": "SUP-T1-04",
+        "supplier_name": "WesternCell Packs",
+        "allocated_quantity": 1000,
+        "unit_cost_inr": 645
+      }
+    ],
+    "approver_name": "Dr. Shreya",
+    "approver_role": "Chief Supply Chain Officer",
+    "justification": "Emergency re-routing authorized for Hackfest 2026 scenario.",
+    "notes": "Testing audit trail persistence"
+  },
+  {
+    "approval_id": "REJ-1793740002",
+    "timestamp": "2026-11-03T21:06:42.278444+00:00",
+    "status": "REJECTED",
+    "material_id": "MAT-02",
+    "allocated_quantity": 1000.0,
+    "total_cost_inr": 645000.0,
+    "selected_suppliers": [
+      {
+        "supplier_id": "SUP-T1-04",
+        "supplier_name": "WesternCell Packs",
+        "allocated_quantity": 1000,
+        "unit_cost_inr": 645
+      }
+    ],
+    "approver_name": "Dr. Shreya",
+    "approver_role": "Chief Supply Chain Officer",
+    "justification": "Excessive cost premium and shared upstream dependency risk.",
+    "notes": "Testing rejection audit trail persistence"
+  },
+  {
+    "approval_id": "APV-1793740001",
+    "timestamp": "2026-11-03T21:06:41.660181+00:00",
+    "status": "APPROVED",
+    "material_id": "MAT-02",
+    "allocated_quantity": 1000.0,
+    "total_cost_inr": 645000.0,
+    "selected_suppliers": [
+      {
+        "supplier_id": "SUP-T1-04",
+        "supplier_name": "WesternCell Packs",
+        "allocated_quantity": 1000,
+        "unit_cost_inr": 645
+      }
+    ],
+    "approver_name": "Dr. Shreya",
+    "approver_role": "Chief Supply Chain Officer",
+    "justification": "Emergency re-routing authorized for Hackfest 2026 scenario.",
+    "notes": "Testing audit trail persistence"
+  },
+  {
+    "approval_id": "REJ-1793739756",
+    "timestamp": "2026-11-03T21:02:36.578417+00:00",
+    "status": "REJECTED",
+    "material_id": "MAT-02",
+    "allocated_quantity": 1000.0,
+    "total_cost_inr": 645000.0,
+    "selected_suppliers": [
+      {
+        "supplier_id": "SUP-T1-04",
+        "supplier_name": "WesternCell Packs",
+        "allocated_quantity": 1000,
+        "unit_cost_inr": 645
+      }
+    ],
+    "approver_name": "Dr. Shreya",
+    "approver_role": "Chief Supply Chain Officer",
+    "justification": "Excessive cost premium and shared upstream dependency risk.",
+    "notes": "Testing rejection audit trail persistence"
+  },
+  {
+    "approval_id": "APV-1793739755",
+    "timestamp": "2026-11-03T21:02:35.982798+00:00",
+    "status": "APPROVED",
+    "material_id": "MAT-02",
+    "allocated_quantity": 1000.0,
+    "total_cost_inr": 645000.0,
+    "selected_suppliers": [
+      {
+        "supplier_id": "SUP-T1-04",
+        "supplier_name": "WesternCell Packs",
+        "allocated_quantity": 1000,
+        "unit_cost_inr": 645
+      }
+    ],
+    "approver_name": "Dr. Shreya",
+    "approver_role": "Chief Supply Chain Officer",
+    "justification": "Emergency re-routing authorized for Hackfest 2026 scenario.",
+    "notes": "Testing audit trail persistence"
+  },
+  {
+    "approval_id": "REJ-1793739135",
+    "timestamp": "2026-11-03T20:52:15.611673+00:00",
+    "status": "REJECTED",
+    "material_id": "MAT-02",
+    "allocated_quantity": 1000.0,
+    "total_cost_inr": 645000.0,
+    "selected_suppliers": [
+      {
+        "supplier_id": "SUP-T1-04",
+        "supplier_name": "WesternCell Packs",
+        "allocated_quantity": 1000,
+        "unit_cost_inr": 645
+      }
+    ],
+    "approver_name": "Dr. Shreya",
+    "approver_role": "Chief Supply Chain Officer",
+    "justification": "Excessive cost premium and shared upstream dependency risk.",
+    "notes": "Testing rejection audit trail persistence"
+  },
+  {
+    "approval_id": "APV-1793739135",
+    "timestamp": "2026-11-03T20:52:15.032064+00:00",
+    "status": "APPROVED",
+    "material_id": "MAT-02",
+    "allocated_quantity": 1000.0,
+    "total_cost_inr": 645000.0,
+    "selected_suppliers": [
+      {
+        "supplier_id": "SUP-T1-04",
+        "supplier_name": "WesternCell Packs",
+        "allocated_quantity": 1000,
+        "unit_cost_inr": 645
+      }
+    ],
+    "approver_name": "Dr. Shreya",
+    "approver_role": "Chief Supply Chain Officer",
+    "justification": "Emergency re-routing authorized for Hackfest 2026 scenario.",
+    "notes": "Testing audit trail persistence"
+  },
+  {
+    "approval_id": "REJ-1793738513",
+    "timestamp": "2026-11-03T20:41:53.180775+00:00",
+    "status": "REJECTED",
+    "material_id": "MAT-02",
+    "allocated_quantity": 1000.0,
+    "total_cost_inr": 645000.0,
+    "selected_suppliers": [
+      {
+        "supplier_id": "SUP-T1-04",
+        "supplier_name": "WesternCell Packs",
+        "allocated_quantity": 1000,
+        "unit_cost_inr": 645
+      }
+    ],
+    "approver_name": "Dr. Shreya",
+    "approver_role": "Chief Supply Chain Officer",
+    "justification": "Excessive cost premium and shared upstream dependency risk.",
+    "notes": "Testing rejection audit trail persistence"
+  },
+  {
+    "approval_id": "APV-1793738512",
+    "timestamp": "2026-11-03T20:41:52.659148+00:00",
+    "status": "APPROVED",
+    "material_id": "MAT-02",
+    "allocated_quantity": 1000.0,
+    "total_cost_inr": 645000.0,
+    "selected_suppliers": [
+      {
+        "supplier_id": "SUP-T1-04",
+        "supplier_name": "WesternCell Packs",
+        "allocated_quantity": 1000,
+        "unit_cost_inr": 645
+      }
+    ],
+    "approver_name": "Dr. Shreya",
+    "approver_role": "Chief Supply Chain Officer",
+    "justification": "Emergency re-routing authorized for Hackfest 2026 scenario.",
+    "notes": "Testing audit trail persistence"
+  },
+  {
+    "approval_id": "REJ-1793737600",
+    "timestamp": "2026-11-03T20:26:40.406683+00:00",
+    "status": "REJECTED",
+    "material_id": "MAT-02",
+    "allocated_quantity": 1000.0,
+    "total_cost_inr": 645000.0,
+    "selected_suppliers": [
+      {
+        "supplier_id": "SUP-T1-04",
+        "supplier_name": "WesternCell Packs",
+        "allocated_quantity": 1000,
+        "unit_cost_inr": 645
+      }
+    ],
+    "approver_name": "Dr. Shreya",
+    "approver_role": "Chief Supply Chain Officer",
+    "justification": "Excessive cost premium and shared upstream dependency risk.",
+    "notes": "Testing rejection audit trail persistence"
+  },
+  {
+    "approval_id": "APV-1793737599",
+    "timestamp": "2026-11-03T20:26:39.713024+00:00",
+    "status": "APPROVED",
+    "material_id": "MAT-02",
+    "allocated_quantity": 1000.0,
+    "total_cost_inr": 645000.0,
+    "selected_suppliers": [
+      {
+        "supplier_id": "SUP-T1-04",
+        "supplier_name": "WesternCell Packs",
+        "allocated_quantity": 1000,
+        "unit_cost_inr": 645
+      }
+    ],
+    "approver_name": "Dr. Shreya",
+    "approver_role": "Chief Supply Chain Officer",
+    "justification": "Emergency re-routing authorized for Hackfest 2026 scenario.",
+    "notes": "Testing audit trail persistence"
+  },
+  {
+    "approval_id": "REJ-1793737182",
+    "timestamp": "2026-11-03T20:19:42.675489+00:00",
+    "status": "REJECTED",
+    "material_id": "MAT-02",
+    "allocated_quantity": 1000.0,
+    "total_cost_inr": 645000.0,
+    "selected_suppliers": [
+      {
+        "supplier_id": "SUP-T1-04",
+        "supplier_name": "WesternCell Packs",
+        "allocated_quantity": 1000,
+        "unit_cost_inr": 645
+      }
+    ],
+    "approver_name": "Dr. Shreya",
+    "approver_role": "Chief Supply Chain Officer",
+    "justification": "Excessive cost premium and shared upstream dependency risk.",
+    "notes": "Testing rejection audit trail persistence"
+  },
+  {
+    "approval_id": "APV-1793737181",
+    "timestamp": "2026-11-03T20:19:41.595839+00:00",
+    "status": "APPROVED",
+    "material_id": "MAT-02",
+    "allocated_quantity": 1000.0,
+    "total_cost_inr": 645000.0,
+    "selected_suppliers": [
+      {
+        "supplier_id": "SUP-T1-04",
+        "supplier_name": "WesternCell Packs",
+        "allocated_quantity": 1000,
+        "unit_cost_inr": 645
+      }
+    ],
+    "approver_name": "Dr. Shreya",
+    "approver_role": "Chief Supply Chain Officer",
+    "justification": "Emergency re-routing authorized for Hackfest 2026 scenario.",
+    "notes": "Testing audit trail persistence"
+  },
+  {
+    "approval_id": "REJ-1793736662",
+    "timestamp": "2026-11-03T20:11:02.967111+00:00",
+    "status": "REJECTED",
+    "material_id": "MAT-02",
+    "allocated_quantity": 1000.0,
+    "total_cost_inr": 645000.0,
+    "selected_suppliers": [
+      {
+        "supplier_id": "SUP-T1-04",
+        "supplier_name": "WesternCell Packs",
+        "allocated_quantity": 1000,
+        "unit_cost_inr": 645
+      }
+    ],
+    "approver_name": "Dr. Shreya",
+    "approver_role": "Chief Supply Chain Officer",
+    "justification": "Excessive cost premium and shared upstream dependency risk.",
+    "notes": "Testing rejection audit trail persistence"
+  },
+  {
+    "approval_id": "APV-1793736662",
+    "timestamp": "2026-11-03T20:11:02.576595+00:00",
+    "status": "APPROVED",
+    "material_id": "MAT-02",
+    "allocated_quantity": 1000.0,
+    "total_cost_inr": 645000.0,
+    "selected_suppliers": [
+      {
+        "supplier_id": "SUP-T1-04",
+        "supplier_name": "WesternCell Packs",
+        "allocated_quantity": 1000,
+        "unit_cost_inr": 645
+      }
+    ],
+    "approver_name": "Dr. Shreya",
+    "approver_role": "Chief Supply Chain Officer",
+    "justification": "Emergency re-routing authorized for Hackfest 2026 scenario.",
+    "notes": "Testing audit trail persistence"
+  },
+  {
+    "approval_id": "REJ-1793735666",
+    "timestamp": "2026-11-03T19:54:26.465081+00:00",
+    "status": "REJECTED",
+    "material_id": "MAT-02",
+    "allocated_quantity": 1000.0,
+    "total_cost_inr": 645000.0,
+    "selected_suppliers": [
+      {
+        "supplier_id": "SUP-T1-04",
+        "supplier_name": "WesternCell Packs",
+        "allocated_quantity": 1000,
+        "unit_cost_inr": 645
+      }
+    ],
+    "approver_name": "Dr. Shreya",
+    "approver_role": "Chief Supply Chain Officer",
+    "justification": "Excessive cost premium and shared upstream dependency risk.",
+    "notes": "Testing rejection audit trail persistence"
+  },
+  {
+    "approval_id": "APV-1793735666",
+    "timestamp": "2026-11-03T19:54:26.059206+00:00",
+    "status": "APPROVED",
+    "material_id": "MAT-02",
+    "allocated_quantity": 1000.0,
+    "total_cost_inr": 645000.0,
+    "selected_suppliers": [
+      {
+        "supplier_id": "SUP-T1-04",
+        "supplier_name": "WesternCell Packs",
+        "allocated_quantity": 1000,
+        "unit_cost_inr": 645
+      }
+    ],
+    "approver_name": "Dr. Shreya",
+    "approver_role": "Chief Supply Chain Officer",
+    "justification": "Emergency re-routing authorized for Hackfest 2026 scenario.",
+    "notes": "Testing audit trail persistence"
+  },
+  {
+    "approval_id": "REJ-1793735570",
+    "timestamp": "2026-11-03T19:52:50.883169+00:00",
+    "status": "REJECTED",
+    "material_id": "MAT-02",
+    "allocated_quantity": 1000.0,
+    "total_cost_inr": 645000.0,
+    "selected_suppliers": [
+      {
+        "supplier_id": "SUP-T1-04",
+        "supplier_name": "WesternCell Packs",
+        "allocated_quantity": 1000,
+        "unit_cost_inr": 645
+      }
+    ],
+    "approver_name": "Dr. Shreya",
+    "approver_role": "Chief Supply Chain Officer",
+    "justification": "Excessive cost premium and shared upstream dependency risk.",
+    "notes": "Testing rejection audit trail persistence"
+  },
+  {
+    "approval_id": "APV-1793735570",
+    "timestamp": "2026-11-03T19:52:50.484185+00:00",
+    "status": "APPROVED",
+    "material_id": "MAT-02",
+    "allocated_quantity": 1000.0,
+    "total_cost_inr": 645000.0,
+    "selected_suppliers": [
+      {
+        "supplier_id": "SUP-T1-04",
+        "supplier_name": "WesternCell Packs",
+        "allocated_quantity": 1000,
+        "unit_cost_inr": 645
+      }
+    ],
+    "approver_name": "Dr. Shreya",
+    "approver_role": "Chief Supply Chain Officer",
+    "justification": "Emergency re-routing authorized for Hackfest 2026 scenario.",
+    "notes": "Testing audit trail persistence"
+  },
+  {
+    "approval_id": "REJ-1793735369",
+    "timestamp": "2026-11-03T19:49:29.180116+00:00",
+    "status": "REJECTED",
+    "material_id": "MAT-02",
+    "allocated_quantity": 1000.0,
+    "total_cost_inr": 645000.0,
+    "selected_suppliers": [
+      {
+        "supplier_id": "SUP-T1-04",
+        "supplier_name": "WesternCell Packs",
+        "allocated_quantity": 1000,
+        "unit_cost_inr": 645
+      }
+    ],
+    "approver_name": "Dr. Shreya",
+    "approver_role": "Chief Supply Chain Officer",
+    "justification": "Excessive cost premium and shared upstream dependency risk.",
+    "notes": "Testing rejection audit trail persistence"
+  },
+  {
+    "approval_id": "APV-1793735367",
+    "timestamp": "2026-11-03T19:49:27.702462+00:00",
+    "status": "APPROVED",
+    "material_id": "MAT-02",
+    "allocated_quantity": 1000.0,
+    "total_cost_inr": 645000.0,
+    "selected_suppliers": [
+      {
+        "supplier_id": "SUP-T1-04",
+        "supplier_name": "WesternCell Packs",
+        "allocated_quantity": 1000,
+        "unit_cost_inr": 645
+      }
+    ],
+    "approver_name": "Dr. Shreya",
+    "approver_role": "Chief Supply Chain Officer",
+    "justification": "Emergency re-routing authorized for Hackfest 2026 scenario.",
+    "notes": "Testing audit trail persistence"
+  },
+  {
+    "approval_id": "REJ-1793735346",
+    "timestamp": "2026-11-03T19:49:06.142360+00:00",
+    "status": "REJECTED",
+    "material_id": "MAT-02",
+    "allocated_quantity": 1000.0,
+    "total_cost_inr": 645000.0,
+    "selected_suppliers": [
+      {
+        "supplier_id": "SUP-T1-04",
+        "supplier_name": "WesternCell Packs",
+        "allocated_quantity": 1000,
+        "unit_cost_inr": 645
+      }
+    ],
+    "approver_name": "Dr. Shreya",
+    "approver_role": "Chief Supply Chain Officer",
+    "justification": "Excessive cost premium and shared upstream dependency risk.",
+    "notes": "Testing rejection audit trail persistence"
+  },
+  {
+    "approval_id": "APV-1793735345",
+    "timestamp": "2026-11-03T19:49:05.692018+00:00",
+    "status": "APPROVED",
+    "material_id": "MAT-02",
+    "allocated_quantity": 1000.0,
+    "total_cost_inr": 645000.0,
+    "selected_suppliers": [
+      {
+        "supplier_id": "SUP-T1-04",
+        "supplier_name": "WesternCell Packs",
+        "allocated_quantity": 1000,
+        "unit_cost_inr": 645
+      }
+    ],
+    "approver_name": "Dr. Shreya",
+    "approver_role": "Chief Supply Chain Officer",
+    "justification": "Emergency re-routing authorized for Hackfest 2026 scenario.",
+    "notes": "Testing audit trail persistence"
+  },
+  {
+    "approval_id": "REJ-1793735304",
+    "timestamp": "2026-11-03T19:48:24.956338+00:00",
+    "status": "REJECTED",
+    "material_id": "MAT-02",
+    "allocated_quantity": 1000.0,
+    "total_cost_inr": 645000.0,
+    "selected_suppliers": [
+      {
+        "supplier_id": "SUP-T1-04",
+        "supplier_name": "WesternCell Packs",
+        "allocated_quantity": 1000,
+        "unit_cost_inr": 645
+      }
+    ],
+    "approver_name": "Dr. Shreya",
+    "approver_role": "Chief Supply Chain Officer",
+    "justification": "Excessive cost premium and shared upstream dependency risk.",
+    "notes": "Testing rejection audit trail persistence"
+  },
+  {
+    "approval_id": "APV-1793735304",
+    "timestamp": "2026-11-03T19:48:24.491368+00:00",
+    "status": "APPROVED",
+    "material_id": "MAT-02",
+    "allocated_quantity": 1000.0,
+    "total_cost_inr": 645000.0,
+    "selected_suppliers": [
+      {
+        "supplier_id": "SUP-T1-04",
+        "supplier_name": "WesternCell Packs",
+        "allocated_quantity": 1000,
+        "unit_cost_inr": 645
+      }
+    ],
+    "approver_name": "Dr. Shreya",
+    "approver_role": "Chief Supply Chain Officer",
+    "justification": "Emergency re-routing authorized for Hackfest 2026 scenario.",
+    "notes": "Testing audit trail persistence"
+  },
+  {
+    "approval_id": "REJ-1793734544",
+    "timestamp": "2026-11-03T19:35:44.786600+00:00",
+    "status": "REJECTED",
+    "material_id": "MAT-02",
+    "allocated_quantity": 1000.0,
+    "total_cost_inr": 645000.0,
+    "selected_suppliers": [
+      {
+        "supplier_id": "SUP-T1-04",
+        "supplier_name": "WesternCell Packs",
+        "allocated_quantity": 1000,
+        "unit_cost_inr": 645
+      }
+    ],
+    "approver_name": "Dr. Shreya",
+    "approver_role": "Chief Supply Chain Officer",
+    "justification": "Excessive cost premium and shared upstream dependency risk.",
+    "notes": "Testing rejection audit trail persistence"
+  },
+  {
+    "approval_id": "APV-1793734542",
+    "timestamp": "2026-11-03T19:35:42.909244+00:00",
+    "status": "APPROVED",
+    "material_id": "MAT-02",
+    "allocated_quantity": 1000.0,
+    "total_cost_inr": 645000.0,
+    "selected_suppliers": [
+      {
+        "supplier_id": "SUP-T1-04",
+        "supplier_name": "WesternCell Packs",
+        "allocated_quantity": 1000,
+        "unit_cost_inr": 645
+      }
+    ],
+    "approver_name": "Dr. Shreya",
+    "approver_role": "Chief Supply Chain Officer",
+    "justification": "Emergency re-routing authorized for Hackfest 2026 scenario.",
+    "notes": "Testing audit trail persistence"
+  },
+  {
+    "approval_id": "REJ-1793732229",
+    "timestamp": "2026-11-03T18:57:09.379185+00:00",
+    "status": "REJECTED",
+    "material_id": "MAT-02",
+    "allocated_quantity": 1000.0,
+    "total_cost_inr": 645000.0,
+    "selected_suppliers": [
+      {
+        "supplier_id": "SUP-T1-04",
+        "supplier_name": "WesternCell Packs",
+        "allocated_quantity": 1000,
+        "unit_cost_inr": 645
+      }
+    ],
+    "approver_name": "Dr. Shreya",
+    "approver_role": "Chief Supply Chain Officer",
+    "justification": "Excessive cost premium and shared upstream dependency risk.",
+    "notes": "Testing rejection audit trail persistence"
+  },
+  {
+    "approval_id": "APV-1793732228",
+    "timestamp": "2026-11-03T18:57:08.957802+00:00",
+    "status": "APPROVED",
+    "material_id": "MAT-02",
+    "allocated_quantity": 1000.0,
+    "total_cost_inr": 645000.0,
+    "selected_suppliers": [
+      {
+        "supplier_id": "SUP-T1-04",
+        "supplier_name": "WesternCell Packs",
+        "allocated_quantity": 1000,
+        "unit_cost_inr": 645
+      }
+    ],
+    "approver_name": "Dr. Shreya",
+    "approver_role": "Chief Supply Chain Officer",
+    "justification": "Emergency re-routing authorized for Hackfest 2026 scenario.",
+    "notes": "Testing audit trail persistence"
+  },
+  {
+    "approval_id": "REJ-1793730116",
+    "timestamp": "2026-11-03T18:21:56.256712+00:00",
+    "status": "REJECTED",
+    "material_id": "MAT-02",
+    "allocated_quantity": 1000,
+    "total_cost_inr": 645000,
+    "selected_suppliers": [
+      {
+        "supplier_id": "SUP-T1-04",
+        "supplier_name": "WesternCell Packs",
+        "allocated_quantity": 1000,
+        "unit_cost_inr": 645
+      }
+    ],
+    "approver_name": "RAJU",
+    "approver_role": "Chief Supply Chain Officer",
+    "justification": "DUMMY PARTS",
+    "notes": "Decision: REJECTED"
+  },
+  {
+    "approval_id": "REJ-1793729421",
+    "timestamp": "2026-11-03T18:10:21.099392+00:00",
+    "status": "REJECTED",
+    "material_id": "MAT-02",
+    "allocated_quantity": 1000.0,
+    "total_cost_inr": 645000.0,
+    "selected_suppliers": [
+      {
+        "supplier_id": "SUP-T1-04",
+        "supplier_name": "WesternCell Packs",
+        "allocated_quantity": 1000,
+        "unit_cost_inr": 645
+      }
+    ],
+    "approver_name": "Dr. Shreya",
+    "approver_role": "Chief Supply Chain Officer",
+    "justification": "Excessive cost premium and shared upstream dependency risk.",
+    "notes": "Testing rejection audit trail persistence"
+  },
+  {
+    "approval_id": "APV-1793729420",
+    "timestamp": "2026-11-03T18:10:20.837709+00:00",
+    "status": "APPROVED",
+    "material_id": "MAT-02",
+    "allocated_quantity": 1000.0,
+    "total_cost_inr": 645000.0,
+    "selected_suppliers": [
+      {
+        "supplier_id": "SUP-T1-04",
+        "supplier_name": "WesternCell Packs",
+        "allocated_quantity": 1000,
+        "unit_cost_inr": 645
+      }
+    ],
+    "approver_name": "Dr. Shreya",
+    "approver_role": "Chief Supply Chain Officer",
+    "justification": "Emergency re-routing authorized for Hackfest 2026 scenario.",
+    "notes": "Testing audit trail persistence"
+  },
+  {
+    "approval_id": "REJ-1793728227",
+    "timestamp": "2026-11-03T17:50:27.890428+00:00",
+    "status": "REJECTED",
+    "material_id": "MAT-02",
+    "allocated_quantity": 1000,
+    "total_cost_inr": 645000,
+    "selected_suppliers": [
+      {
+        "supplier_id": "SUP-T1-04",
+        "supplier_name": "WesternCell Packs",
+        "allocated_quantity": 1000,
+        "unit_cost_inr": 645
+      }
+    ],
+    "approver_name": "RAJ",
+    "approver_role": "Chief Supply Chain Officer",
+    "justification": "DAMAGE SUPPLIES",
+    "notes": "Decision: REJECTED"
+  },
+  {
+    "approval_id": "APV-1793728179",
+    "timestamp": "2026-11-03T17:49:39.163100+00:00",
+    "status": "APPROVED",
+    "material_id": "MAT-02",
+    "allocated_quantity": 1000,
+    "total_cost_inr": 645000,
+    "selected_suppliers": [
+      {
+        "supplier_id": "SUP-T1-04",
+        "supplier_name": "WesternCell Packs",
+        "allocated_quantity": 1000,
+        "unit_cost_inr": 645
+      }
+    ],
+    "approver_name": "RAJ",
+    "approver_role": "Chief Supply Chain Officer",
+    "justification": "DAMAGE SUPPLIES",
+    "notes": "Decision: APPROVED"
+  },
+  {
+    "approval_id": "REJ-1793726706",
+    "timestamp": "2026-11-03T17:25:06.120976+00:00",
+    "status": "REJECTED",
+    "material_id": "MAT-02",
+    "allocated_quantity": 1000.0,
+    "total_cost_inr": 645000.0,
+    "selected_suppliers": [
+      {
+        "supplier_id": "SUP-T1-04",
+        "supplier_name": "WesternCell Packs",
+        "allocated_quantity": 1000,
+        "unit_cost_inr": 645
+      }
+    ],
+    "approver_name": "Dr. Shreya",
+    "approver_role": "Chief Supply Chain Officer",
+    "justification": "Excessive cost premium and shared upstream dependency risk.",
+    "notes": "Testing rejection audit trail persistence"
+  },
+  {
+    "approval_id": "APV-1793726705",
+    "timestamp": "2026-11-03T17:25:05.805067+00:00",
+    "status": "APPROVED",
+    "material_id": "MAT-02",
+    "allocated_quantity": 1000.0,
+    "total_cost_inr": 645000.0,
+    "selected_suppliers": [
+      {
+        "supplier_id": "SUP-T1-04",
+        "supplier_name": "WesternCell Packs",
+        "allocated_quantity": 1000,
+        "unit_cost_inr": 645
+      }
+    ],
+    "approver_name": "Dr. Shreya",
+    "approver_role": "Chief Supply Chain Officer",
+    "justification": "Emergency re-routing authorized for Hackfest 2026 scenario.",
+    "notes": "Testing audit trail persistence"
+  },
+  {
+    "approval_id": "REJ-1793724688",
+    "timestamp": "2026-11-03T16:51:28.369400+00:00",
+    "status": "REJECTED",
+    "material_id": "MAT-02",
+    "allocated_quantity": 1000.0,
+    "total_cost_inr": 645000.0,
+    "selected_suppliers": [
+      {
+        "supplier_id": "SUP-T1-04",
+        "supplier_name": "WesternCell Packs",
+        "allocated_quantity": 1000,
+        "unit_cost_inr": 645
+      }
+    ],
+    "approver_name": "Dr. Shreya",
+    "approver_role": "Chief Supply Chain Officer",
+    "justification": "Excessive cost premium and shared upstream dependency risk.",
+    "notes": "Testing rejection audit trail persistence"
+  },
+  {
+    "approval_id": "APV-1793724688",
+    "timestamp": "2026-11-03T16:51:28.112688+00:00",
+    "status": "APPROVED",
+    "material_id": "MAT-02",
+    "allocated_quantity": 1000.0,
+    "total_cost_inr": 645000.0,
+    "selected_suppliers": [
+      {
+        "supplier_id": "SUP-T1-04",
+        "supplier_name": "WesternCell Packs",
+        "allocated_quantity": 1000,
+        "unit_cost_inr": 645
+      }
+    ],
+    "approver_name": "Dr. Shreya",
+    "approver_role": "Chief Supply Chain Officer",
+    "justification": "Emergency re-routing authorized for Hackfest 2026 scenario.",
+    "notes": "Testing audit trail persistence"
+  },
+  {
+    "approval_id": "REJ-1793724664",
+    "timestamp": "2026-11-03T16:51:04.120600+00:00",
+    "status": "REJECTED",
+    "material_id": "MAT-02",
+    "allocated_quantity": 1000.0,
+    "total_cost_inr": 645000.0,
+    "selected_suppliers": [
+      {
+        "supplier_id": "SUP-T1-04",
+        "supplier_name": "WesternCell Packs",
+        "allocated_quantity": 1000,
+        "unit_cost_inr": 645
+      }
+    ],
+    "approver_name": "Dr. Shreya",
+    "approver_role": "Chief Supply Chain Officer",
+    "justification": "Excessive cost premium and shared upstream dependency risk.",
+    "notes": "Testing rejection audit trail persistence"
+  },
+  {
+    "approval_id": "APV-1793724663",
+    "timestamp": "2026-11-03T16:51:03.847447+00:00",
+    "status": "APPROVED",
+    "material_id": "MAT-02",
+    "allocated_quantity": 1000.0,
+    "total_cost_inr": 645000.0,
+    "selected_suppliers": [
+      {
+        "supplier_id": "SUP-T1-04",
+        "supplier_name": "WesternCell Packs",
+        "allocated_quantity": 1000,
+        "unit_cost_inr": 645
+      }
+    ],
+    "approver_name": "Dr. Shreya",
+    "approver_role": "Chief Supply Chain Officer",
+    "justification": "Emergency re-routing authorized for Hackfest 2026 scenario.",
+    "notes": "Testing audit trail persistence"
+  },
+  {
+    "approval_id": "APV-1793724223",
+    "timestamp": "2026-11-03T16:43:43.601144+00:00",
+    "status": "APPROVED",
+    "material_id": "MAT-02",
+    "allocated_quantity": 1000.0,
+    "total_cost_inr": 645000.0,
+    "selected_suppliers": [
+      {
+        "supplier_id": "SUP-T1-04",
+        "supplier_name": "WesternCell Packs",
+        "allocated_quantity": 1000,
+        "unit_cost_inr": 645
+      }
+    ],
+    "approver_name": "Dr. Shreya",
+    "approver_role": "Chief Supply Chain Officer",
+    "justification": "Emergency re-routing authorized for Hackfest 2026 scenario.",
+    "notes": "Testing audit trail persistence"
+  },
+  {
+    "approval_id": "APV-1793723754",
+    "timestamp": "2026-11-03T16:35:54.659001+00:00",
+    "status": "APPROVED",
+    "material_id": "MAT-02",
+    "allocated_quantity": 1000.0,
+    "total_cost_inr": 645000.0,
+    "selected_suppliers": [
+      {
+        "supplier_id": "SUP-T1-04",
+        "supplier_name": "WesternCell Packs",
+        "allocated_quantity": 1000,
+        "unit_cost_inr": 645
+      }
+    ],
+    "approver_name": "Dr. Shreya",
+    "approver_role": "Chief Supply Chain Officer",
+    "justification": "Emergency re-routing authorized for Hackfest 2026 scenario.",
+    "notes": "Testing audit trail persistence"
+  },
+  {
+    "approval_id": "APV-1793720202",
+    "timestamp": "2026-11-03T15:36:42.550328+00:00",
+    "status": "APPROVED",
+    "material_id": "MAT-02",
+    "allocated_quantity": 1000,
+    "total_cost_inr": 645000,
+    "selected_suppliers": [
+      {
+        "supplier_id": "SUP-T1-04",
+        "supplier_name": "WesternCell Packs",
+        "allocated_quantity": 1000,
+        "unit_cost_inr": 645
+      }
+    ],
+    "approver_name": "QA Auditor",
+    "approver_role": "Independent QA Engineer",
+    "justification": "Full automated end-to-end QA validation test \u2014 approved",
+    "notes": ""
+  },
+  {
+    "approval_id": "APV-1793719260",
+    "timestamp": "2026-11-03T15:21:00.824418+00:00",
+    "status": "APPROVED",
+    "material_id": "MAT-02",
+    "allocated_quantity": 1000.0,
+    "total_cost_inr": 645000.0,
+    "selected_suppliers": [
+      {
+        "supplier_id": "SUP-T1-04",
+        "supplier_name": "WesternCell Packs",
+        "allocated_quantity": 1000,
+        "unit_cost_inr": 645
+      }
+    ],
+    "approver_name": "Dr. Shreya",
+    "approver_role": "Chief Supply Chain Officer",
+    "justification": "Emergency re-routing authorized for Hackfest 2026 scenario.",
+    "notes": "Testing audit trail persistence"
+  },
+  {
+    "approval_id": "APV-1793719213",
+    "timestamp": "2026-11-03T15:20:13.002072+00:00",
+    "status": "APPROVED",
+    "material_id": "MAT-02",
+    "allocated_quantity": 1000.0,
+    "total_cost_inr": 645000.0,
+    "selected_suppliers": [
+      {
+        "supplier_id": "SUP-T1-04",
+        "supplier_name": "WesternCell Packs",
+        "allocated_quantity": 1000,
+        "unit_cost_inr": 645
+      }
+    ],
+    "approver_name": "Dr. Shreya",
+    "approver_role": "Chief Supply Chain Officer",
+    "justification": "Emergency re-routing authorized for Hackfest 2026 scenario.",
+    "notes": "Testing audit trail persistence"
+  },
+  {
+    "approval_id": "APV-1793717547",
+    "timestamp": "2026-11-03T14:52:27.728667+00:00",
+    "status": "APPROVED",
+    "material_id": "MAT-02",
+    "allocated_quantity": 1000.0,
+    "total_cost_inr": 645000.0,
+    "selected_suppliers": [
+      {
+        "supplier_id": "SUP-T1-04",
+        "supplier_name": "WesternCell",
+        "allocated_quantity": 1000,
+        "unit_cost_inr": 645
+      }
+    ],
+    "approver_name": "QA Tester",
+    "approver_role": "QA Engineer",
+    "justification": "Test approval 2 (repeat)",
+    "notes": ""
+  },
+  {
+    "approval_id": "APV-1793717547",
+    "timestamp": "2026-11-03T14:52:27.726666+00:00",
+    "status": "APPROVED",
+    "material_id": "MAT-02",
+    "allocated_quantity": 1000.0,
+    "total_cost_inr": 645000.0,
+    "selected_suppliers": [
+      {
+        "supplier_id": "SUP-T1-04",
+        "supplier_name": "WesternCell",
+        "allocated_quantity": 1000,
+        "unit_cost_inr": 645
+      }
+    ],
+    "approver_name": "QA Tester",
+    "approver_role": "QA Engineer",
+    "justification": "Test approval 1",
+    "notes": ""
+  },
+  {
+    "approval_id": "APV-1793717528",
+    "timestamp": "2026-11-03T14:52:08.518259+00:00",
+    "status": "APPROVED",
+    "material_id": "MAT-02",
+    "allocated_quantity": 1000.0,
+    "total_cost_inr": 645000.0,
+    "selected_suppliers": [
+      {
+        "supplier_id": "SUP-T1-04",
+        "supplier_name": "WesternCell Packs",
+        "allocated_quantity": 1000,
+        "unit_cost_inr": 645
+      }
+    ],
+    "approver_name": "Dr. Shreya",
+    "approver_role": "Chief Supply Chain Officer",
+    "justification": "Emergency re-routing authorized for Hackfest 2026 scenario.",
+    "notes": "Testing audit trail persistence"
+  },
+  {
+    "approval_id": "APV-1793715776",
+    "timestamp": "2026-11-03T14:22:56.421012+00:00",
+    "status": "APPROVED",
+    "material_id": "MAT-02",
+    "allocated_quantity": 1000.0,
+    "total_cost_inr": 645000.0,
+    "selected_suppliers": [
+      {
+        "supplier_id": "SUP-T1-04",
+        "supplier_name": "WesternCell Packs",
+        "allocated_quantity": 1000,
+        "unit_cost_inr": 645
+      }
+    ],
+    "approver_name": "Dr. Shreya",
+    "approver_role": "Chief Supply Chain Officer",
+    "justification": "Emergency re-routing authorized for Hackfest 2026 scenario.",
+    "notes": "Testing audit trail persistence"
+  },
+  {
+    "approval_id": "APV-1793715442",
+    "timestamp": "2026-11-03T14:17:22.274155+00:00",
+    "status": "APPROVED",
+    "material_id": "MAT-02",
+    "allocated_quantity": 1000.0,
+    "total_cost_inr": 645000.0,
+    "selected_suppliers": [
+      {
+        "supplier_id": "SUP-T1-04",
+        "supplier_name": "WesternCell Packs",
+        "allocated_quantity": 1000,
+        "unit_cost_inr": 645
+      }
+    ],
+    "approver_name": "Dr. Shreya",
+    "approver_role": "Chief Supply Chain Officer",
+    "justification": "Emergency re-routing authorized for Hackfest 2026 scenario.",
+    "notes": "Testing audit trail persistence"
+  },
+  {
+    "approval_id": "APV-1793713707",
+    "timestamp": "2026-11-03T13:48:27.158393+00:00",
+    "status": "APPROVED",
+    "material_id": "MAT-02",
+    "allocated_quantity": 1000,
+    "total_cost_inr": 645000,
+    "selected_suppliers": [
+      {
+        "supplier_id": "SUP-T1-04",
+        "supplier_name": "WesternCell Packs",
+        "allocated_quantity": 1000,
+        "unit_cost_inr": 645
+      }
+    ],
+    "approver_name": "Gowrav",
+    "approver_role": "Chief Supply Chain Officer",
+    "justification": "Authorized emergency re-allocation to protect productionschedule at factory",
+    "notes": ""
+  },
+  {
+    "approval_id": "APV-1793705415",
+    "timestamp": "2026-11-03T11:30:15.480962+00:00",
+    "status": "APPROVED",
+    "material_id": "MAT-02",
+    "allocated_quantity": 1000,
+    "total_cost_inr": 645000,
+    "selected_suppliers": [
+      {
+        "supplier_id": "SUP-T1-04",
+        "supplier_name": "WesternCell Packs",
+        "allocated_quantity": 1000,
+        "unit_cost_inr": 645
+      }
+    ],
+    "approver_name": "Dr. Shreya",
+    "approver_role": "Chief Supply Chain Officer",
+    "justification": "Authorized emergency re-allocation to protect production schedule at Factory FAC-01.",
+    "notes": ""
+  },
+  {
+    "approval_id": "APV-1793701260",
+    "timestamp": "2026-11-03T10:21:00.229288+00:00",
+    "status": "APPROVED",
+    "material_id": "MAT-02",
+    "allocated_quantity": 1000.0,
+    "total_cost_inr": 645000.0,
+    "selected_suppliers": [
+      {
+        "supplier_id": "SUP-T1-04",
+        "supplier_name": "WesternCell Packs",
+        "allocated_quantity": 1000,
+        "unit_cost_inr": 645
+      }
+    ],
+    "approver_name": "Dr. Shreya",
+    "approver_role": "Chief Supply Chain Officer",
+    "justification": "Emergency re-routing authorized for Hackfest 2026 scenario.",
+    "notes": "Testing audit trail persistence"
+  },
+  {
+    "approval_id": "APV-1793701220",
+    "timestamp": "2026-11-03T10:20:20.428524+00:00",
+    "status": "APPROVED",
+    "material_id": "MAT-02",
+    "allocated_quantity": 1000.0,
+    "total_cost_inr": 645000.0,
+    "selected_suppliers": [
+      {
+        "supplier_id": "SUP-T1-04",
+        "supplier_name": "WesternCell Packs",
+        "allocated_quantity": 1000,
+        "unit_cost_inr": 645
+      }
+    ],
+    "approver_name": "Dr. Shreya",
+    "approver_role": "Chief Supply Chain Officer",
+    "justification": "Emergency re-routing authorized for Hackfest 2026 scenario.",
+    "notes": "Testing audit trail persistence"
+  },
+  {
+    "approval_id": "APV-1793697462",
+    "timestamp": "2026-11-03T09:17:42.296851+00:00",
+    "status": "APPROVED",
+    "material_id": "MAT-02",
+    "allocated_quantity": 1000.0,
+    "total_cost_inr": 645000.0,
+    "selected_suppliers": [
+      {
+        "supplier_id": "SUP-T1-04",
+        "supplier_name": "WesternCell Packs",
+        "allocated_quantity": 1000,
+        "unit_cost_inr": 645
+      }
+    ],
+    "approver_name": "Dr. Shreya",
+    "approver_role": "Chief Supply Chain Officer",
+    "justification": "Emergency re-routing authorized for Hackfest 2026 scenario.",
+    "notes": "Testing audit trail persistence"
+  },
+  {
+    "approval_id": "APV-1793643966",
+    "timestamp": "2026-11-02T18:26:06.218328+00:00",
+    "status": "APPROVED",
+    "material_id": "MAT-02",
+    "allocated_quantity": 1000.0,
+    "total_cost_inr": 645000.0,
+    "selected_suppliers": [
+      {
+        "supplier_id": "SUP-T1-04",
+        "supplier_name": "WesternCell Packs",
+        "allocated_quantity": 1000,
+        "unit_cost_inr": 645
+      }
+    ],
+    "approver_name": "Dr. Shreya",
+    "approver_role": "Chief Supply Chain Officer",
+    "justification": "Emergency re-routing authorized for Hackfest 2026 scenario.",
+    "notes": "Testing audit trail persistence"
+  },
+  {
+    "approval_id": "APV-1793643423",
+    "timestamp": "2026-11-02T18:17:03.908007+00:00",
+    "status": "APPROVED",
+    "material_id": "MAT-02",
+    "allocated_quantity": 1000.0,
+    "total_cost_inr": 645000.0,
+    "selected_suppliers": [
+      {
+        "supplier_id": "SUP-T1-04",
+        "supplier_name": "WesternCell Packs",
+        "allocated_quantity": 1000,
+        "unit_cost_inr": 645
+      }
+    ],
+    "approver_name": "Dr. Shreya",
+    "approver_role": "Chief Supply Chain Officer",
+    "justification": "Emergency re-routing authorized for Hackfest 2026 scenario.",
+    "notes": "Testing audit trail persistence"
+  },
+  {
+    "approval_id": "APV-1793643274",
+    "timestamp": "2026-11-02T18:14:34.355821+00:00",
+    "status": "APPROVED",
+    "material_id": "MAT-02",
+    "allocated_quantity": 1000.0,
+    "total_cost_inr": 645000.0,
+    "selected_suppliers": [
+      {
+        "supplier_id": "SUP-T1-04",
+        "supplier_name": "WesternCell Packs",
+        "allocated_quantity": 1000,
+        "unit_cost_inr": 645
+      }
+    ],
+    "approver_name": "Dr. Shreya",
+    "approver_role": "Chief Supply Chain Officer",
+    "justification": "Emergency re-routing authorized for Hackfest 2026 scenario.",
+    "notes": "Testing audit trail persistence"
+  },
+  {
+    "approval_id": "APV-1793643011",
+    "timestamp": "2026-11-02T18:10:11.173408+00:00",
+    "status": "APPROVED",
+    "material_id": "MAT-02",
+    "allocated_quantity": 1000.0,
+    "total_cost_inr": 645000.0,
+    "selected_suppliers": [
+      {
+        "supplier_id": "SUP-T1-04",
+        "supplier_name": "WesternCell Packs",
+        "allocated_quantity": 1000,
+        "unit_cost_inr": 645
+      }
+    ],
+    "approver_name": "Dr. Shreya",
+    "approver_role": "Chief Supply Chain Officer",
+    "justification": "Emergency re-routing authorized for Hackfest 2026 scenario.",
+    "notes": "Testing audit trail persistence"
+  }
+]

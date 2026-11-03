@@ -1,0 +1,6 @@
+pandas
+networkx
+streamlit
+requests
+python-dotenv
+hdbcli

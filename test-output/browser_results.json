@@ -1,0 +1,90 @@
+[
+  {
+    "Test ID": "TC-BROWSER-01",
+    "Feature": "Application Startup & Initial Render",
+    "Expected Result": "AUTOPILOT 2.0 loads at localhost:8501 with tabs and controls rendered",
+    "Actual Result": "Page title='AUTOPILOT 2.0 \u2014 Supply Chain Resilience', Header found: True",
+    "Status": "PASS",
+    "Evidence": "C:\\Users\\Spandana B S\\.gemini\\antigravity\\brain\\3d9da215-4a80-4421-8dc2-002ad70bc6db\\TEST_SCREENSHOTS\\01_app_startup.png"
+  },
+  {
+    "Test ID": "TC-BROWSER-02",
+    "Feature": "SAP HANA Cloud Indicator in Sidebar",
+    "Expected Result": "Sidebar shows SAP HANA Cloud as active connected data source",
+    "Actual Result": "HANA keyword present: True, Status indicator: True",
+    "Status": "PASS",
+    "Evidence": "C:\\Users\\Spandana B S\\.gemini\\antigravity\\brain\\3d9da215-4a80-4421-8dc2-002ad70bc6db\\TEST_SCREENSHOTS\\02_sidebar_hana_status.png"
+  },
+  {
+    "Test ID": "TC-BROWSER-03",
+    "Feature": "Five Dashboard Tabs Detection",
+    "Expected Result": "Exactly 5 tabs detected on dashboard",
+    "Actual Result": "Detected 8 tabs in DOM",
+    "Status": "WARN",
+    "Evidence": ""
+  },
+  {
+    "Test ID": "TC-BROWSER-04",
+    "Feature": "Tab 1: Global Network Graph & Metrics",
+    "Expected Result": "Displays 91 nodes, 528 edges, tier breakdown and entity counts",
+    "Actual Result": "Graph metrics detected: True, Tier breakdown: True",
+    "Status": "PASS",
+    "Evidence": "C:\\Users\\Spandana B S\\.gemini\\antigravity\\brain\\3d9da215-4a80-4421-8dc2-002ad70bc6db\\TEST_SCREENSHOTS\\03_tab1_network_graph.png"
+  },
+  {
+    "Test ID": "TC-BROWSER-05",
+    "Feature": "Tab 2: Supplier Risk Radar Data Table",
+    "Expected Result": "Shows 35 suppliers, risk scores, Critical/High/Medium/Low tiers",
+    "Actual Result": "Supplier table present: True, Risk tiers present: True, Critical supplier SUP-T2-01: True",
+    "Status": "PASS",
+    "Evidence": "C:\\Users\\Spandana B S\\.gemini\\antigravity\\brain\\3d9da215-4a80-4421-8dc2-002ad70bc6db\\TEST_SCREENSHOTS\\04_tab2_risk_radar.png"
+  },
+  {
+    "Test ID": "TC-BROWSER-06",
+    "Feature": "Tab 3: Disruption Impact Summary Metrics",
+    "Expected Result": "Potential Financial Exposure and Exposed Customer Orders display non-zero values (BUG-03 patch verified)",
+    "Actual Result": "Exposure displayed: True, Order metrics visible: True",
+    "Status": "PASS",
+    "Evidence": "C:\\Users\\Spandana B S\\.gemini\\antigravity\\brain\\3d9da215-4a80-4421-8dc2-002ad70bc6db\\TEST_SCREENSHOTS\\05_tab3_disruption_simulator.png"
+  },
+  {
+    "Test ID": "TC-BROWSER-07",
+    "Feature": "Tab 3: Interactive Disruption Controls",
+    "Expected Result": "Supplier selector and duration controls interactive",
+    "Actual Result": "Found 4 multiselect controls on Tab 3",
+    "Status": "PASS",
+    "Evidence": ""
+  },
+  {
+    "Test ID": "TC-BROWSER-08",
+    "Feature": "Tab 4: Recovery Plan & Challenger UI",
+    "Expected Result": "Displays recommended allocation plan, lead time, procurement cost, and cascading challenger",
+    "Actual Result": "Feasible allocation: True, Cost metric: True, Challenger section: True",
+    "Status": "PASS",
+    "Evidence": "C:\\Users\\Spandana B S\\.gemini\\antigravity\\brain\\3d9da215-4a80-4421-8dc2-002ad70bc6db\\TEST_SCREENSHOTS\\06_tab4_recovery_optimisation.png"
+  },
+  {
+    "Test ID": "TC-BROWSER-09",
+    "Feature": "Tab 5: Deterministic AI Explanations",
+    "Expected Result": "Displays Executive Briefing with exact exposure and supplier narrative (BUG-01 patch verified)",
+    "Actual Result": "Executive briefing present: True",
+    "Status": "PASS",
+    "Evidence": "C:\\Users\\Spandana B S\\.gemini\\antigravity\\brain\\3d9da215-4a80-4421-8dc2-002ad70bc6db\\TEST_SCREENSHOTS\\07_tab5_ai_governance.png"
+  },
+  {
+    "Test ID": "TC-BROWSER-10",
+    "Feature": "Tab 5: Managerial Authorization Workflow",
+    "Expected Result": "Fills approver name and justification, submits form, verifies audit trail persistence",
+    "Actual Result": "Authorization success message: True",
+    "Status": "PASS",
+    "Evidence": "C:\\Users\\Spandana B S\\.gemini\\antigravity\\brain\\3d9da215-4a80-4421-8dc2-002ad70bc6db\\TEST_SCREENSHOTS\\09_tab5_approval_confirmed.png"
+  },
+  {
+    "Test ID": "TC-BROWSER-11",
+    "Feature": "Tab 5: Dossier Export Buttons (MD & JSON)",
+    "Expected Result": "Provides 2 download buttons for Markdown Dossier and JSON Payload",
+    "Actual Result": "Found 2 download buttons on Tab 5",
+    "Status": "PASS",
+    "Evidence": ""
+  }
+]

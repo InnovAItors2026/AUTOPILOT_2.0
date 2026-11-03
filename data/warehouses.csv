@@ -1,0 +1,5 @@
+warehouse_id,warehouse_name,city,state,country,capacity_units,serves_region,linked_factory_id
+WH-01,South Hub Bengaluru,Bengaluru,Karnataka,India,25000,South India,FAC-01
+WH-02,Port Hub Chennai,Chennai,Tamil Nadu,India,20000,Tamil Nadu and exports,FAC-02
+WH-03,West Hub Pune,Pune,Maharashtra,India,18000,Maharashtra and west,FAC-03
+WH-04,North Hub Gurugram,Gurugram,Haryana,India,30000,North India,FAC-01

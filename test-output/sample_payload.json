@@ -1,0 +1,934 @@
+{
+  "timestamp": "2026-11-03T15:36:42.550328+00:00",
+  "network_summary": {
+    "total_nodes": 91,
+    "total_edges": 528,
+    "node_counts": {
+      "supplier": 35,
+      "material": 18,
+      "factory": 3,
+      "warehouse": 4,
+      "transport_route": 6,
+      "customer_order": 25
+    },
+    "data_mode": "SAP HANA Cloud"
+  },
+  "failed_suppliers": [
+    "SUP-T1-03"
+  ],
+  "duration_days": 7,
+  "risk_scores_df": "   supplier_id  ...                                         data_notes\n0    SUP-T1-01  ...                                                   \n1    SUP-T1-02  ...                                                   \n2    SUP-T1-03  ...                                                   \n3    SUP-T1-04  ...                                                   \n4    SUP-T1-05  ...                                                   \n5    SUP-T1-06  ...                                                   \n6    SUP-T1-07  ...                                                   \n7    SUP-T1-08  ...                                                   \n8    SUP-T1-09  ...                                                   \n9    SUP-T1-10  ...                                                   \n10   SUP-T2-01  ...                                                   \n11   SUP-T2-02  ...                                                   \n12   SUP-T2-03  ...                                                   \n13   SUP-T2-04  ...                                                   \n14   SUP-T2-05  ...                                                   \n15   SUP-T2-06  ...                                                   \n16   SUP-T2-07  ...                                                   \n17   SUP-T2-08  ...                                                   \n18   SUP-T2-09  ...                                                   \n19   SUP-T2-10  ...                                                   \n20   SUP-T2-11  ...                                                   \n21   SUP-T2-12  ...                                                   \n22   SUP-T2-13  ...                                                   \n23   SUP-T3-01  ...                                                   \n24   SUP-T3-02  ...  no material mapping: material dependency and i...\n25   SUP-T3-03  ...  no material mapping: material dependency and i...\n26   SUP-T3-04  ...  no material mapping: material dependency and i...\n27   SUP-T3-05  ...                                                   \n28   SUP-T3-06  ...  no material mapping: material dependency and i...\n29   SUP-T3-07  ...  no material mapping: material dependency and i...\n30   SUP-T3-08  ...  no material mapping: material dependency and i...\n31   SUP-T3-09  ...                                                   \n32   SUP-T3-10  ...  no material mapping: material dependency and i...\n33   SUP-T3-11  ...                                                   \n34   SUP-T3-12  ...  no material mapping: material dependency and i...\n\n[35 rows x 27 columns]",
+  "disruption_report": {
+    "scenario": {
+      "failed_supplier_id": "SUP-T1-03",
+      "disruption_duration_days": 7,
+      "duration_note": "scenario label only; not used in any calculation because there is no consumption data",
+      "meaning_of_results": "POTENTIAL exposure found by following dataset links. Not confirmed damage."
+    },
+    "failed_supplier": {
+      "supplier_id": "SUP-T1-03",
+      "supplier_name": "DeccanCell Packs",
+      "tier": 1,
+      "capacity_status": "sufficient",
+      "lead_time_days": 8,
+      "materials_known": true
+    },
+    "direct_materials_status": "KNOWN",
+    "direct_materials": [
+      {
+        "material_id": "MAT-02",
+        "material_name": "Battery pack 4000mAh",
+        "impact_type": "DIRECT",
+        "exposed_through_suppliers": [
+          "SUP-T1-03"
+        ],
+        "products": [
+          "Nova X Smartphone",
+          "Slate 10 Tablet"
+        ]
+      }
+    ],
+    "downstream_suppliers": [],
+    "potential_cascading_materials": [],
+    "backup_assessment": [
+      {
+        "material_id": "MAT-02",
+        "material_name": "Battery pack 4000mAh",
+        "impact_type": "DIRECT",
+        "status": "UNMITIGATED",
+        "exposed_suppliers": [
+          "SUP-T1-03"
+        ],
+        "candidates": [
+          {
+            "candidate_id": "SUP-T1-04",
+            "verdict": "NOT_GENUINE",
+            "reasons": [
+              "capacity insufficient: 5000 vs 9000 units/month (56% of primary)",
+              "shares upstream supplier(s) SUP-T2-01, SUP-T3-01, SUP-T3-02, SUP-T3-03, SUP-T3-04"
+            ]
+          }
+        ],
+        "explanation": "Other suppliers are listed, but none is a genuine independent backup."
+      }
+    ],
+    "factories": [
+      {
+        "factory_id": "FAC-01",
+        "name": "Aarohan Assembly Bengaluru",
+        "impact_type": "DIRECT",
+        "evidence_level": "INVENTORY_LINK",
+        "reasons": [
+          "holds inventory of MAT-02 (DIRECT)",
+          "route RTE-03 (primary route of SUP-T1-03) arrives here"
+        ]
+      },
+      {
+        "factory_id": "FAC-03",
+        "name": "Aarohan Energy Pune",
+        "impact_type": "DIRECT",
+        "evidence_level": "INVENTORY_LINK",
+        "reasons": [
+          "holds inventory of MAT-02 (DIRECT)"
+        ]
+      }
+    ],
+    "warehouses": [
+      {
+        "warehouse_id": "WH-01",
+        "name": "South Hub Bengaluru",
+        "impact_type": "DIRECT",
+        "evidence_level": "INVENTORY_LINK",
+        "reasons": [
+          "holds inventory of MAT-02 (DIRECT)",
+          "is fed by FAC-01 (which holds exposed inventory)"
+        ]
+      },
+      {
+        "warehouse_id": "WH-03",
+        "name": "West Hub Pune",
+        "impact_type": "DIRECT",
+        "evidence_level": "INVENTORY_LINK",
+        "reasons": [
+          "holds inventory of MAT-02 (DIRECT)",
+          "is fed by FAC-03 (which holds exposed inventory)"
+        ]
+      },
+      {
+        "warehouse_id": "WH-04",
+        "name": "North Hub Gurugram",
+        "impact_type": "DIRECT",
+        "evidence_level": "FACTORY_LINK_ONLY",
+        "reasons": [
+          "is fed by FAC-01 (which holds exposed inventory)"
+        ]
+      }
+    ],
+    "inventory": [
+      {
+        "material_id": "MAT-02",
+        "material_name": "Battery pack 4000mAh",
+        "impact_type": "DIRECT",
+        "locations": [
+          {
+            "inventory_id": "INV-03",
+            "location_id": "FAC-03",
+            "location_kind": "factory",
+            "quantity_on_hand": 1400,
+            "reorder_point": 2500,
+            "max_stock": 6000,
+            "status": "BELOW_REORDER_POINT",
+            "shortfall_to_reorder_point": 1100
+          },
+          {
+            "inventory_id": "INV-11",
+            "location_id": "FAC-01",
+            "location_kind": "factory",
+            "quantity_on_hand": 1900,
+            "reorder_point": 4000,
+            "max_stock": 8000,
+            "status": "BELOW_REORDER_POINT",
+            "shortfall_to_reorder_point": 2100
+          },
+          {
+            "inventory_id": "INV-23",
+            "location_id": "WH-01",
+            "location_kind": "warehouse",
+            "quantity_on_hand": 800,
+            "reorder_point": 1500,
+            "max_stock": 4000,
+            "status": "BELOW_REORDER_POINT",
+            "shortfall_to_reorder_point": 700
+          },
+          {
+            "inventory_id": "INV-31",
+            "location_id": "WH-03",
+            "location_kind": "warehouse",
+            "quantity_on_hand": 1200,
+            "reorder_point": 1800,
+            "max_stock": 4500,
+            "status": "BELOW_REORDER_POINT",
+            "shortfall_to_reorder_point": 600
+          }
+        ],
+        "pooled_all_locations": {
+          "status": "BELOW_REORDER_POINT",
+          "locations": 4,
+          "on_hand": 5300,
+          "reorder_point": 9800,
+          "locations_below_reorder_point": 4
+        },
+        "pooled_factories": {
+          "status": "BELOW_REORDER_POINT",
+          "locations": 2,
+          "on_hand": 3300,
+          "reorder_point": 6500,
+          "locations_below_reorder_point": 2
+        },
+        "pooled_warehouses": {
+          "status": "BELOW_REORDER_POINT",
+          "locations": 2,
+          "on_hand": 2000,
+          "reorder_point": 3300,
+          "locations_below_reorder_point": 2
+        },
+        "shortage_exposure": "POOLED_BELOW_REORDER_POINT"
+      }
+    ],
+    "transport_routes": [
+      {
+        "route_id": "RTE-03",
+        "origin_id": "FAC-03",
+        "destination_id": "FAC-01",
+        "mode": "road",
+        "transit_days": 3,
+        "cargo_text": "Battery packs (MAT-02)",
+        "cargo_text_material_ids_annotation": [
+          "MAT-02"
+        ],
+        "impact_type": "DIRECT",
+        "evidence_level": "SUPPLIER_ROUTE",
+        "reasons": [
+          "used by SUP-T1-03 (primary route)",
+          "starts/ends at potentially affected location FAC-03",
+          "starts/ends at potentially affected location FAC-01"
+        ],
+        "status": "POTENTIALLY_AFFECTED (route not assumed to have failed)"
+      },
+      {
+        "route_id": "RTE-01",
+        "origin_id": "FAC-02",
+        "destination_id": "FAC-01",
+        "mode": "road",
+        "transit_days": 2,
+        "cargo_text": "Assembled main PCB (MAT-09)",
+        "cargo_text_material_ids_annotation": [
+          "MAT-09"
+        ],
+        "impact_type": "DIRECT",
+        "evidence_level": "LOCATION_LINK_ONLY",
+        "reasons": [
+          "starts/ends at potentially affected location FAC-01"
+        ],
+        "status": "POTENTIALLY_AFFECTED (route not assumed to have failed)"
+      },
+      {
+        "route_id": "RTE-02",
+        "origin_id": "SUP-T1-02",
+        "destination_id": "FAC-01",
+        "mode": "road",
+        "transit_days": 2,
+        "cargo_text": "Displays and assembled PCBs",
+        "cargo_text_material_ids_annotation": [],
+        "impact_type": "DIRECT",
+        "evidence_level": "LOCATION_LINK_ONLY",
+        "reasons": [
+          "starts/ends at potentially affected location FAC-01"
+        ],
+        "status": "POTENTIALLY_AFFECTED (route not assumed to have failed)"
+      },
+      {
+        "route_id": "RTE-04",
+        "origin_id": "FAC-01",
+        "destination_id": "WH-04",
+        "mode": "rail",
+        "transit_days": 5,
+        "cargo_text": "Finished goods to north India",
+        "cargo_text_material_ids_annotation": [],
+        "impact_type": "DIRECT",
+        "evidence_level": "LOCATION_LINK_ONLY",
+        "reasons": [
+          "starts/ends at potentially affected location FAC-01",
+          "starts/ends at potentially affected location WH-04"
+        ],
+        "status": "POTENTIALLY_AFFECTED (route not assumed to have failed)"
+      },
+      {
+        "route_id": "RTE-05",
+        "origin_id": "FAC-01",
+        "destination_id": "WH-01",
+        "mode": "road",
+        "transit_days": 1,
+        "cargo_text": "Finished goods to south DC",
+        "cargo_text_material_ids_annotation": [],
+        "impact_type": "DIRECT",
+        "evidence_level": "LOCATION_LINK_ONLY",
+        "reasons": [
+          "starts/ends at potentially affected location FAC-01",
+          "starts/ends at potentially affected location WH-01"
+        ],
+        "status": "POTENTIALLY_AFFECTED (route not assumed to have failed)"
+      }
+    ],
+    "customer_orders": {
+      "note": "POTENTIAL exposure only: not confirmed delays, cancellations or financial loss.",
+      "included_statuses": [
+        "confirmed",
+        "planned"
+      ],
+      "headline_path_supported": {
+        "order_count": 16,
+        "potential_value_exposure_inr": 73418850,
+        "value_is_complete": true,
+        "orders_with_unknown_value": [],
+        "direct_order_count": 16,
+        "potential_cascading_order_count": 0,
+        "potential_value_direct_inr": 73418850,
+        "potential_value_cascading_only_inr": 0,
+        "orders": [
+          {
+            "order_id": "ORD-01",
+            "customer_name": "PixelMart Retail",
+            "warehouse_id": "WH-01",
+            "product_name": "Nova X Smartphone",
+            "quantity": 420,
+            "order_value_inr": 7975800,
+            "status": "confirmed",
+            "required_date": "2026-11-04",
+            "evidence_level": "WAREHOUSE_HOLDS_MATERIAL",
+            "impact_type": "DIRECT",
+            "supporting_materials": [
+              {
+                "material_id": "MAT-02",
+                "impact_type": "DIRECT",
+                "evidence_level": "WAREHOUSE_HOLDS_MATERIAL",
+                "via_location": "WH-01"
+              }
+            ]
+          },
+          {
+            "order_id": "ORD-02",
+            "customer_name": "GadgetHaat Stores",
+            "warehouse_id": "WH-01",
+            "product_name": "Nova X Smartphone",
+            "quantity": 180,
+            "order_value_inr": 3418200,
+            "status": "confirmed",
+            "required_date": "2026-11-06",
+            "evidence_level": "WAREHOUSE_HOLDS_MATERIAL",
+            "impact_type": "DIRECT",
+            "supporting_materials": [
+              {
+                "material_id": "MAT-02",
+                "impact_type": "DIRECT",
+                "evidence_level": "WAREHOUSE_HOLDS_MATERIAL",
+                "via_location": "WH-01"
+              }
+            ]
+          },
+          {
+            "order_id": "ORD-03",
+            "customer_name": "Southern Spectrum",
+            "warehouse_id": "WH-01",
+            "product_name": "Slate 10 Tablet",
+            "quantity": 95,
+            "order_value_inr": 2374050,
+            "status": "confirmed",
+            "required_date": "2026-11-10",
+            "evidence_level": "WAREHOUSE_HOLDS_MATERIAL",
+            "impact_type": "DIRECT",
+            "supporting_materials": [
+              {
+                "material_id": "MAT-02",
+                "impact_type": "DIRECT",
+                "evidence_level": "WAREHOUSE_HOLDS_MATERIAL",
+                "via_location": "WH-01"
+              }
+            ]
+          },
+          {
+            "order_id": "ORD-09",
+            "customer_name": "Sahyadri Retail",
+            "warehouse_id": "WH-03",
+            "product_name": "Nova X Smartphone",
+            "quantity": 360,
+            "order_value_inr": 6836400,
+            "status": "confirmed",
+            "required_date": "2026-11-09",
+            "evidence_level": "WAREHOUSE_HOLDS_MATERIAL",
+            "impact_type": "DIRECT",
+            "supporting_materials": [
+              {
+                "material_id": "MAT-02",
+                "impact_type": "DIRECT",
+                "evidence_level": "WAREHOUSE_HOLDS_MATERIAL",
+                "via_location": "WH-03"
+              }
+            ]
+          },
+          {
+            "order_id": "ORD-10",
+            "customer_name": "Deccan Digital",
+            "warehouse_id": "WH-03",
+            "product_name": "Slate 10 Tablet",
+            "quantity": 175,
+            "order_value_inr": 4373250,
+            "status": "confirmed",
+            "required_date": "2026-11-14",
+            "evidence_level": "WAREHOUSE_HOLDS_MATERIAL",
+            "impact_type": "DIRECT",
+            "supporting_materials": [
+              {
+                "material_id": "MAT-02",
+                "impact_type": "DIRECT",
+                "evidence_level": "WAREHOUSE_HOLDS_MATERIAL",
+                "via_location": "WH-03"
+              }
+            ]
+          },
+          {
+            "order_id": "ORD-12",
+            "customer_name": "Nashik Superstore",
+            "warehouse_id": "WH-03",
+            "product_name": "Nova X Smartphone",
+            "quantity": 150,
+            "order_value_inr": 2848500,
+            "status": "confirmed",
+            "required_date": "2026-11-16",
+            "evidence_level": "WAREHOUSE_HOLDS_MATERIAL",
+            "impact_type": "DIRECT",
+            "supporting_materials": [
+              {
+                "material_id": "MAT-02",
+                "impact_type": "DIRECT",
+                "evidence_level": "WAREHOUSE_HOLDS_MATERIAL",
+                "via_location": "WH-03"
+              }
+            ]
+          },
+          {
+            "order_id": "ORD-13",
+            "customer_name": "Capital Gadget Co",
+            "warehouse_id": "WH-04",
+            "product_name": "Nova X Smartphone",
+            "quantity": 480,
+            "order_value_inr": 9115200,
+            "status": "confirmed",
+            "required_date": "2026-11-11",
+            "evidence_level": "LINKED_FACTORY_HOLDS_MATERIAL",
+            "impact_type": "DIRECT",
+            "supporting_materials": [
+              {
+                "material_id": "MAT-02",
+                "impact_type": "DIRECT",
+                "evidence_level": "LINKED_FACTORY_HOLDS_MATERIAL",
+                "via_location": "FAC-01"
+              }
+            ]
+          },
+          {
+            "order_id": "ORD-14",
+            "customer_name": "NCR SuperDigital",
+            "warehouse_id": "WH-04",
+            "product_name": "Slate 10 Tablet",
+            "quantity": 210,
+            "order_value_inr": 5247900,
+            "status": "confirmed",
+            "required_date": "2026-11-15",
+            "evidence_level": "LINKED_FACTORY_HOLDS_MATERIAL",
+            "impact_type": "DIRECT",
+            "supporting_materials": [
+              {
+                "material_id": "MAT-02",
+                "impact_type": "DIRECT",
+                "evidence_level": "LINKED_FACTORY_HOLDS_MATERIAL",
+                "via_location": "FAC-01"
+              }
+            ]
+          },
+          {
+            "order_id": "ORD-16",
+            "customer_name": "Pink City Mobiles",
+            "warehouse_id": "WH-04",
+            "product_name": "Nova X Smartphone",
+            "quantity": 190,
+            "order_value_inr": 3608100,
+            "status": "confirmed",
+            "required_date": "2026-11-18",
+            "evidence_level": "LINKED_FACTORY_HOLDS_MATERIAL",
+            "impact_type": "DIRECT",
+            "supporting_materials": [
+              {
+                "material_id": "MAT-02",
+                "impact_type": "DIRECT",
+                "evidence_level": "LINKED_FACTORY_HOLDS_MATERIAL",
+                "via_location": "FAC-01"
+              }
+            ]
+          },
+          {
+            "order_id": "ORD-17",
+            "customer_name": "Satluj Retail",
+            "warehouse_id": "WH-04",
+            "product_name": "Slate 10 Tablet",
+            "quantity": 80,
+            "order_value_inr": 1999200,
+            "status": "confirmed",
+            "required_date": "2026-11-19",
+            "evidence_level": "LINKED_FACTORY_HOLDS_MATERIAL",
+            "impact_type": "DIRECT",
+            "supporting_materials": [
+              {
+                "material_id": "MAT-02",
+                "impact_type": "DIRECT",
+                "evidence_level": "LINKED_FACTORY_HOLDS_MATERIAL",
+                "via_location": "FAC-01"
+              }
+            ]
+          },
+          {
+            "order_id": "ORD-18",
+            "customer_name": "Lucknow Gadget Mart",
+            "warehouse_id": "WH-04",
+            "product_name": "Nova X Smartphone",
+            "quantity": 230,
+            "order_value_inr": 4367700,
+            "status": "planned",
+            "required_date": "2026-11-20",
+            "evidence_level": "LINKED_FACTORY_HOLDS_MATERIAL",
+            "impact_type": "DIRECT",
+            "supporting_materials": [
+              {
+                "material_id": "MAT-02",
+                "impact_type": "DIRECT",
+                "evidence_level": "LINKED_FACTORY_HOLDS_MATERIAL",
+                "via_location": "FAC-01"
+              }
+            ]
+          },
+          {
+            "order_id": "ORD-19",
+            "customer_name": "Eastern Circuit",
+            "warehouse_id": "WH-04",
+            "product_name": "Nova X Smartphone",
+            "quantity": 200,
+            "order_value_inr": 3798000,
+            "status": "confirmed",
+            "required_date": "2026-11-17",
+            "evidence_level": "LINKED_FACTORY_HOLDS_MATERIAL",
+            "impact_type": "DIRECT",
+            "supporting_materials": [
+              {
+                "material_id": "MAT-02",
+                "impact_type": "DIRECT",
+                "evidence_level": "LINKED_FACTORY_HOLDS_MATERIAL",
+                "via_location": "FAC-01"
+              }
+            ]
+          },
+          {
+            "order_id": "ORD-21",
+            "customer_name": "Sabarmati Digital",
+            "warehouse_id": "WH-03",
+            "product_name": "Nova X Smartphone",
+            "quantity": 270,
+            "order_value_inr": 5127300,
+            "status": "confirmed",
+            "required_date": "2026-11-13",
+            "evidence_level": "WAREHOUSE_HOLDS_MATERIAL",
+            "impact_type": "DIRECT",
+            "supporting_materials": [
+              {
+                "material_id": "MAT-02",
+                "impact_type": "DIRECT",
+                "evidence_level": "WAREHOUSE_HOLDS_MATERIAL",
+                "via_location": "WH-03"
+              }
+            ]
+          },
+          {
+            "order_id": "ORD-22",
+            "customer_name": "Kutch Electros",
+            "warehouse_id": "WH-03",
+            "product_name": "Slate 10 Tablet",
+            "quantity": 110,
+            "order_value_inr": 2748900,
+            "status": "planned",
+            "required_date": "2026-11-21",
+            "evidence_level": "WAREHOUSE_HOLDS_MATERIAL",
+            "impact_type": "DIRECT",
+            "supporting_materials": [
+              {
+                "material_id": "MAT-02",
+                "impact_type": "DIRECT",
+                "evidence_level": "WAREHOUSE_HOLDS_MATERIAL",
+                "via_location": "WH-03"
+              }
+            ]
+          },
+          {
+            "order_id": "ORD-24",
+            "customer_name": "Hyderabad Pixel Point",
+            "warehouse_id": "WH-01",
+            "product_name": "Nova X Smartphone",
+            "quantity": 340,
+            "order_value_inr": 6456600,
+            "status": "confirmed",
+            "required_date": "2026-11-10",
+            "evidence_level": "WAREHOUSE_HOLDS_MATERIAL",
+            "impact_type": "DIRECT",
+            "supporting_materials": [
+              {
+                "material_id": "MAT-02",
+                "impact_type": "DIRECT",
+                "evidence_level": "WAREHOUSE_HOLDS_MATERIAL",
+                "via_location": "WH-01"
+              }
+            ]
+          },
+          {
+            "order_id": "ORD-25",
+            "customer_name": "Charminar Trade House",
+            "warehouse_id": "WH-01",
+            "product_name": "Slate 10 Tablet",
+            "quantity": 125,
+            "order_value_inr": 3123750,
+            "status": "planned",
+            "required_date": "2026-11-22",
+            "evidence_level": "WAREHOUSE_HOLDS_MATERIAL",
+            "impact_type": "DIRECT",
+            "supporting_materials": [
+              {
+                "material_id": "MAT-02",
+                "impact_type": "DIRECT",
+                "evidence_level": "WAREHOUSE_HOLDS_MATERIAL",
+                "via_location": "WH-01"
+              }
+            ]
+          }
+        ]
+      },
+      "additional_product_link_only": {
+        "order_count": 3,
+        "potential_value_exposure_inr": 18185500,
+        "value_is_complete": true,
+        "orders_with_unknown_value": [],
+        "direct_order_count": 3,
+        "potential_cascading_order_count": 0,
+        "potential_value_direct_inr": 18185500,
+        "potential_value_cascading_only_inr": 0,
+        "orders": [
+          {
+            "order_id": "ORD-05",
+            "customer_name": "Cauvery Digital",
+            "warehouse_id": "WH-02",
+            "product_name": "Nova X Smartphone",
+            "quantity": 310,
+            "order_value_inr": 5886900,
+            "status": "confirmed",
+            "required_date": "2026-11-08",
+            "evidence_level": "PRODUCT_LINK_ONLY",
+            "impact_type": "DIRECT",
+            "supporting_materials": [
+              {
+                "material_id": "MAT-02",
+                "impact_type": "DIRECT",
+                "evidence_level": "PRODUCT_LINK_ONLY",
+                "via_location": ""
+              }
+            ]
+          },
+          {
+            "order_id": "ORD-06",
+            "customer_name": "Marina Mobiles",
+            "warehouse_id": "WH-02",
+            "product_name": "Slate 10 Tablet",
+            "quantity": 140,
+            "order_value_inr": 3498600,
+            "status": "confirmed",
+            "required_date": "2026-11-12",
+            "evidence_level": "PRODUCT_LINK_ONLY",
+            "impact_type": "DIRECT",
+            "supporting_materials": [
+              {
+                "material_id": "MAT-02",
+                "impact_type": "DIRECT",
+                "evidence_level": "PRODUCT_LINK_ONLY",
+                "via_location": ""
+              }
+            ]
+          },
+          {
+            "order_id": "ORD-08",
+            "customer_name": "Port City Exports",
+            "warehouse_id": "WH-02",
+            "product_name": "Nova X Smartphone",
+            "quantity": 500,
+            "order_value_inr": 8800000,
+            "status": "planned",
+            "required_date": "2026-11-20",
+            "evidence_level": "PRODUCT_LINK_ONLY",
+            "impact_type": "DIRECT",
+            "supporting_materials": [
+              {
+                "material_id": "MAT-02",
+                "impact_type": "DIRECT",
+                "evidence_level": "PRODUCT_LINK_ONLY",
+                "via_location": ""
+              }
+            ]
+          }
+        ],
+        "note": "Product uses an exposed material but no warehouse/factory storage path was found. Upper-bound extra exposure; NOT part of the headline."
+      },
+      "upper_bound_including_product_link_only_inr": 91604350
+    },
+    "delivery_delay": {
+      "status": "NOT COMPUTED",
+      "reason": "No shipment schedule, replenishment plan or consumption data in the dataset."
+    },
+    "production_days_remaining": {
+      "status": "NOT COMPUTED",
+      "reason": "No material consumption or production-rate data in the dataset."
+    },
+    "summary": {
+      "direct_material_count": 1,
+      "downstream_supplier_count": 0,
+      "potential_cascading_material_count": 0,
+      "factory_count": 2,
+      "warehouse_count": 3,
+      "route_count": 5,
+      "headline_order_count": 16,
+      "headline_potential_order_value_exposure_inr": 73418850,
+      "additional_product_link_only_order_count": 3,
+      "backup_status_by_material": {
+        "MAT-02": "UNMITIGATED"
+      }
+    },
+    "evidence_levels": {
+      "DIRECT": "Supplier is listed for the material in supplier_materials.csv.",
+      "POTENTIAL_CASCADING": "Supplier is downstream of the failed supplier; not assumed to have stopped.",
+      "WAREHOUSE_HOLDS_MATERIAL": "Order's warehouse holds inventory of an exposed material (headline).",
+      "LINKED_FACTORY_HOLDS_MATERIAL": "A factory feeding the order's warehouse holds an exposed material (headline).",
+      "PRODUCT_LINK_ONLY": "Only the product-material link exists (upper bound, not in headline).",
+      "INVENTORY_LINK": "Location holds inventory of an exposed material.",
+      "ROUTE_LINK_ONLY": "A route used by an affected supplier arrives here; nothing else supports the link.",
+      "FACTORY_LINK_ONLY": "Warehouse is fed by a factory with inventory-link evidence.",
+      "SUPPLIER_ROUTE": "Route is used by the failed or a downstream supplier.",
+      "LOCATION_LINK_ONLY": "Route starts or ends at a potentially affected location."
+    },
+    "assumptions": [
+      "S1  Duration (7 days) is a scenario label only; it is not used in any calculation.",
+      "S2  Supplier-to-material links come only from supplier_materials.csv.",
+      "S3  Backup status reuses check_backup_candidate (same material, independent, sufficient capacity).",
+      "S4  quantity_on_hand is treated as available inventory and compared with reorder_point only.",
+      "S5  Factory links: inventory rows (INVENTORY_LINK) or arrival of an affected supplier's route (ROUTE_LINK_ONLY).",
+      "S6  Warehouse links: inventory rows, or being fed by a factory with inventory-link evidence.",
+      "S7  Orders: confirmed and planned only; each order counted once at its strongest evidence level; product names compared after whitespace normalisation.",
+      "S8  order_value_inr is potential exposure, not an actual loss.",
+      "S9  Routes are potentially affected, not assumed to have failed.",
+      "S10 Delivery delay and production days remaining are NOT COMPUTED."
+    ],
+    "data_gaps": [
+      "No consumption or production-rate data: production days remaining cannot be computed.",
+      "No shipment schedule, replenishment plan or production plan: delivery delay cannot be estimated.",
+      "No bill of materials: factory links rely on inventory rows and supplier routes, not on a proven 'material is consumed at this factory' relationship.",
+      "supplier_dependencies.csv material_id is shown as an annotation only and is never used to decide impact.",
+      "Capacity of a possible backup is compared with the exposed supplier's monthly_capacity_units; current load is not in the data, so 'sufficient' is optimistic."
+    ]
+  },
+  "recovery_plan": {
+    "material_id": "MAT-02",
+    "required_quantity": 1000,
+    "failed_supplier_ids": [
+      "SUP-T1-03"
+    ],
+    "original_supplier_id": null,
+    "candidate_evaluation": [
+      {
+        "supplier_id": "SUP-T1-04",
+        "supplier_name": "WesternCell Packs",
+        "supplier_classification": "BACKUP",
+        "tier": 1.0,
+        "material_compatible": true,
+        "feasibility_status": "FEASIBLE",
+        "quantity_available": 5000,
+        "quantity_to_allocate": 1000,
+        "moq_units": 200,
+        "unit_cost_inr": 645,
+        "lead_time_days": 9,
+        "additional_cost_per_unit_inr": null,
+        "transport_status": "AVAILABLE",
+        "primary_route_id": "RTE-03",
+        "dependency_status": "SHARED_UPSTREAM",
+        "shared_upstreams": [
+          "SUP-T2-01",
+          "SUP-T3-01",
+          "SUP-T3-02",
+          "SUP-T3-03",
+          "SUP-T3-04"
+        ],
+        "quality_score": 94.0,
+        "ranking_score": 93.0,
+        "rejection_reason": null,
+        "dependency_reason": "SUP-T1-04 shares upstream supplier(s) with failed set: SUP-T2-01, SUP-T3-01, SUP-T3-02, SUP-T3-03, SUP-T3-04. A failure at those nodes could affect this candidate too.",
+        "compatibility_reason": "Compatible: listed in supplier_materials.csv for MAT-02"
+      }
+    ],
+    "recommended_plan": {
+      "material_id": "MAT-02",
+      "required_quantity": 1000,
+      "allocated_quantity": 1000,
+      "unmet_quantity": 0,
+      "status": "FEASIBLE",
+      "optimization_objective": "BALANCED",
+      "selected_suppliers": [
+        {
+          "supplier_id": "SUP-T1-04",
+          "supplier_name": "WesternCell Packs",
+          "supplier_classification": "BACKUP",
+          "allocated_quantity": 1000,
+          "unit_cost_inr": 645,
+          "lead_time_days": 9,
+          "additional_cost_per_unit_inr": null,
+          "transport_status": "AVAILABLE",
+          "dependency_status": "SHARED_UPSTREAM",
+          "reachable_routes": [
+            {
+              "route_id": "RTE-03",
+              "destination_id": "FAC-01",
+              "transit_days": 3,
+              "cost_per_shipment_inr": 24800,
+              "is_primary_route": true
+            }
+          ],
+          "shared_upstreams": [
+            "SUP-T2-01",
+            "SUP-T3-01",
+            "SUP-T3-02",
+            "SUP-T3-03",
+            "SUP-T3-04"
+          ],
+          "ranking_score": 93.0
+        }
+      ],
+      "total_procurement_cost_inr": 645000,
+      "effective_delivery_days": 12,
+      "missing_information": [],
+      "rejected_candidates": [],
+      "warnings": [
+        "RISK: SUP-T1-04 shares upstream supplier(s) with the failed set: SUP-T2-01, SUP-T3-01, SUP-T3-02, SUP-T3-03, SUP-T3-04. A further failure at those upstream nodes could affect this supplier too."
+      ],
+      "selection_explanation": "BALANCED plan: 1 supplier(s), 1000 units fully allocated."
+    },
+    "lowest_cost_plan": {
+      "material_id": "MAT-02",
+      "required_quantity": 1000,
+      "allocated_quantity": 1000,
+      "unmet_quantity": 0,
+      "status": "FEASIBLE",
+      "optimization_objective": "LOWEST_COST",
+      "selected_suppliers": [
+        {
+          "supplier_id": "SUP-T1-04",
+          "supplier_name": "WesternCell Packs",
+          "supplier_classification": "BACKUP",
+          "allocated_quantity": 1000,
+          "unit_cost_inr": 645,
+          "lead_time_days": 9,
+          "additional_cost_per_unit_inr": null,
+          "transport_status": "AVAILABLE",
+          "dependency_status": "SHARED_UPSTREAM",
+          "reachable_routes": [
+            {
+              "route_id": "RTE-03",
+              "destination_id": "FAC-01",
+              "transit_days": 3,
+              "cost_per_shipment_inr": 24800,
+              "is_primary_route": true
+            }
+          ],
+          "shared_upstreams": [
+            "SUP-T2-01",
+            "SUP-T3-01",
+            "SUP-T3-02",
+            "SUP-T3-03",
+            "SUP-T3-04"
+          ],
+          "ranking_score": 93.0
+        }
+      ],
+      "total_procurement_cost_inr": 645000,
+      "effective_delivery_days": 12,
+      "missing_information": [],
+      "rejected_candidates": [],
+      "warnings": [
+        "RISK: SUP-T1-04 shares upstream supplier(s) with the failed set: SUP-T2-01, SUP-T3-01, SUP-T3-02, SUP-T3-03, SUP-T3-04. A further failure at those upstream nodes could affect this supplier too."
+      ],
+      "selection_explanation": "LOWEST_COST plan: 1 supplier(s), 1000 units fully allocated."
+    },
+    "fastest_plan": {
+      "material_id": "MAT-02",
+      "required_quantity": 1000,
+      "allocated_quantity": 1000,
+      "unmet_quantity": 0,
+      "status": "FEASIBLE",
+      "optimization_objective": "FASTEST",
+      "selected_suppliers": [
+        {
+          "supplier_id": "SUP-T1-04",
+          "supplier_name": "WesternCell Packs",
+          "supplier_classification": "BACKUP",
+          "allocated_quantity": 1000,
+          "unit_cost_inr": 645,
+          "lead_time_days": 9,
+          "additional_cost_per_unit_inr": null,
+          "transport_status": "AVAILABLE",
+          "dependency_status": "SHARED_UPSTREAM",
+          "reachable_routes": [
+            {
+              "route_id": "RTE-03",
+              "destination_id": "FAC-01",
+              "transit_days": 3,
+              "cost_per_shipment_inr": 24800,
+              "is_primary_route": true
+            }
+          ],
+          "shared_upstreams": [
+            "SUP-T2-01",
+            "SUP-T3-01",
+            "SUP-T3-02",
+            "SUP-T3-03",
+            "SUP-T3-04"
+          ],
+          "ranking_score": 93.0
+        }
+      ],
+      "total_procurement_cost_inr": 645000,
+      "effective_delivery_days": 12,
+      "missing_information": [],
+      "rejected_candidates": [],
+      "warnings": [
+        "RISK: SUP-T1-04 shares upstream supplier(s) with the failed set: SUP-T2-01, SUP-T3-01, SUP-T3-02, SUP-T3-03, SUP-T3-04. A further failure at those upstream nodes could affect this supplier too."
+      ],
+      "selection_explanation": "FASTEST plan: 1 supplier(s), 1000 units fully allocated."
+    }
+  },
+  "challenger_result": null,
+  "ai_explanations": {
+    "disruption_narrative": "A disruption of 7 days has been declared for DeccanCell Packs (SUP-T1-03). This failure propagates downstream across the multi-tier digital twin, placing 16 customer orders at risk with a potential financial exposure of \u20b973,418,850.00. ",
+    "recovery_narrative": "The Recovery Optimiser evaluated candidate backup suppliers for MAT-02. Verdict: FEASIBLE. The recommended BALANCED plan successfully allocates 1,000 out of 1,000 required units across 1 supplier(s): WesternCell Packs (SUP-T1-04, allocating 1000 units @ \u20b9645/unit). Total procurement cost is \u20b9645,000.00 with an estimated delivery timeline of 12 days. Candidate ranking prioritized material compatibility, capacity feasibility, and upstream supplier independence.",
+    "challenger_narrative": "The initial recovery plan has not yet been challenged with secondary cascade or logistics route failures. Execute the Challenger in the dashboard to verify resilience under combined disruptions.",
+    "executive_summary": "EXECUTIVE BRIEFING:\n\u2022 Incident: Disruption at DeccanCell Packs (SUP-T1-03) risking \u20b973,418,850.00 across 16 customer orders.\n\u2022 Autonomous Mitigation: Selected 1 qualified backup supplier(s) covering 1,000/1,000 units.\n\u2022 Financial Impact: Additional procurement investment of \u20b9645,000.00 with 12 days replenishment cycle.\n\u2022 Resilience Recommendation: BALANCED plan: 1 supplier(s), 1000 units fully allocated."
+  }
+}

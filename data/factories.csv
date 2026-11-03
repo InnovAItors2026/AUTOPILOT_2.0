@@ -1,0 +1,4 @@
+factory_id,factory_name,city,state,country,product_focus,monthly_capacity_units,linked_warehouse_id
+FAC-01,Aarohan Assembly Bengaluru,Bengaluru,Karnataka,India,Smartphone and tablet final assembly,15000,WH-01
+FAC-02,Aarohan SMT Chennai,Chennai,Tamil Nadu,India,PCB SMT and board assembly,18000,WH-02
+FAC-03,Aarohan Energy Pune,Pune,Maharashtra,India,Battery pack assembly,10000,WH-03

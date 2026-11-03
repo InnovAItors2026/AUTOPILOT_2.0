@@ -1,0 +1,19 @@
+material_id,material_name,category,unit,unit_cost_inr,typical_lead_time_days,used_in_product
+MAT-01,Li-ion cell 4000mAh,battery,pcs,185,14,Nova X Smartphone;Slate 10 Tablet
+MAT-02,Battery pack 4000mAh,battery,pcs,620,8,Nova X Smartphone;Slate 10 Tablet
+MAT-03,OLED display 6.5 inch,display,pcs,1850,7,Nova X Smartphone
+MAT-04,Cover glass,display,pcs,220,12,Nova X Smartphone;Slate 10 Tablet
+MAT-05,Application processor SoC,semiconductor,pcs,2400,21,Nova X Smartphone;Slate 10 Tablet
+MAT-06,LPDDR plus UFS memory,semiconductor,pcs,890,18,Nova X Smartphone;Slate 10 Tablet
+MAT-07,Camera module 48MP,optics,pcs,410,12,Nova X Smartphone;Slate 10 Tablet
+MAT-08,Bare multilayer PCB,pcb,pcs,95,10,Nova X Smartphone;Slate 10 Tablet;Pulse Buds
+MAT-09,Assembled main PCB,pcb,pcs,1750,6,Nova X Smartphone;Slate 10 Tablet
+MAT-10,USB-C connector,interconnect,pcs,18,8,Nova X Smartphone;Slate 10 Tablet
+MAT-11,Plastic housing set,mechanical,set,140,8,Nova X Smartphone;Pulse Buds
+MAT-12,Aluminum mid-frame,mechanical,pcs,260,11,Nova X Smartphone;Slate 10 Tablet
+MAT-13,Speaker and mic set,acoustic,set,55,7,Nova X Smartphone;Slate 10 Tablet;Pulse Buds
+MAT-14,Thermal pad kit,thermal,set,12,7,Nova X Smartphone;Slate 10 Tablet
+MAT-15,Flex cable set,interconnect,set,35,6,Nova X Smartphone;Slate 10 Tablet
+MAT-16,Precision screw pack,mechanical,pack,8,5,Nova X Smartphone;Slate 10 Tablet;Pulse Buds
+MAT-17,Retail carton and tray,packaging,set,22,5,Nova X Smartphone;Slate 10 Tablet;Pulse Buds
+MAT-18,Camera image sensor,optics,pcs,310,20,Nova X Smartphone;Slate 10 Tablet
